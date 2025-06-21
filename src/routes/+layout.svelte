@@ -39,7 +39,7 @@
 		<!-- Desktop navigation -->
 		<nav class="hidden md:flex justify-between items-center text-lg font-medium">
 			<a href="/articles" class="text-gray-800 dark:text-gray-200 px-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Articles</a>
-			<a href="/books" class="text-gray-800 dark:text-gray-200 px-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Reading List</a>
+			<a href="/resources" class="text-gray-800 dark:text-gray-200 px-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Resources</a>
 			<a href="/profiles" class="text-gray-800 dark:text-gray-200 px-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Profile</a>
 			<button 
 				onclick={() => isDarkMode = !isDarkMode}
@@ -62,7 +62,7 @@
 		{#if isMenuOpen}
 			<nav class="absolute top-full left-0 right-0 bg-white dark:bg-gray-900 shadow-lg md:hidden z-50">
 				<a href="/articles" class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Articles</a>
-				<a href="/books" class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Reading List</a>
+				<a href="/resources" class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Resources</a>
 				<a href="/profiles" class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Profile</a>
 			</nav>
 		{/if}

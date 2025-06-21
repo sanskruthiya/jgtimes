@@ -13,7 +13,7 @@ interface ArticleInfo {
 }
 
 export function getArticles(): ArticleInfo[] {
-  const articlesDirectory = resolve(process.cwd(), 'articles');
+  const articlesDirectory = resolve(process.cwd(), 'articles/en');
   const filenames = readdirSync(articlesDirectory);
 
   const articles: ArticleInfo[] = filenames

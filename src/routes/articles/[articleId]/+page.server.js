@@ -12,7 +12,7 @@ export async function load({ params }) {
   // パラメータからファイル名を取得
   const { articleId } = params;
   // ファイルパスを作成
-  const filePath = path.resolve('articles', `${articleId}.md`);
+  const filePath = path.resolve('articles/en', `${articleId}.md`);
   
   // ファイルを読み込む
   let fileContent;
@@ -20,25 +20,38 @@ export async function load({ params }) {
     fileContent = await readFile(filePath, 'utf-8');
   } catch (err) {
     console.error('Error reading file:', err);
+    return {
+      status: 404,
+      error: new Error('Article not found')
+    };
   }
 
   // gray-matterを使ってMarkdownとFront Matterを分離
-  const parsedMatter = matter(fileContent);
-  const mdParser = new markdown(); 
-  const htmlContent = mdParser.render(parsedMatter.content);
+  try {
+    const parsedMatter = matter(fileContent);
+    const mdParser = new markdown(); 
+    const htmlContent = mdParser.render(parsedMatter.content);
+    let metadata = parsedMatter.data;
+    
+    // 日付のフォーマット化
+    if (metadata.date instanceof Date) {
+      metadata.date = format(metadata.date, 'yyyy-MM-dd');
+    }
 
-  // parsedMatter.dataの中をformat化してmetadataに代入する
-  let metadata = parsedMatter.data;
-  if (metadata.date instanceof Date) {
-    metadata.date = format(metadata.date, 'yyyy-MM-dd');
+    const articles = getArticles();
+    
+    // 枠組みに提供するデータを返す
+    return {
+      articles,
+      params,
+      htmlContent,
+      metadata
+    };
+  } catch (err) {
+    console.error('Error parsing markdown:', err);
+    return {
+      status: 500,
+      error: new Error('Error parsing article content')
+    };
   }
-
-  const articles = getArticles();
-  // 枠組みに提供するデータを返す
-  return {
-    articles,
-    params,
-    htmlContent, // マークダウンをHTMLに変換したもの
-    metadata // メタデータ
-  };
 }

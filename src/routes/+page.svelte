@@ -46,7 +46,7 @@
             </p>
         </div>
         <img 
-            src="/images/background05.webp" 
+            src="/images/background_main.webp" 
             alt="Japan Cityscape" 
             class="w-full object-cover"
             loading="eager"
@@ -63,9 +63,9 @@
     </section>
 
     <section class="mt-16 px-4">
-        <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">About Us</h2>
+        <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">About</h2>
         <div class="prose prose-lg dark:prose-invert max-w-none">
-            <p>Japan Geospatial Times is your premier source for insights into Japan's geospatial landscape. We explore the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth analysis and the latest developments in the field.</p>
+            <p>Japan Geospatial Times is a personal blog dedicated to exploring Japan's geospatial landscape. Here, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth analysis and the latest developments in the field.</p>
         </div>
     </section>
 </div>
