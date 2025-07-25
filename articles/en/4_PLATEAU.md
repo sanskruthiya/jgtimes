@@ -3,7 +3,7 @@ title: "Project PLATEAU"
 description: 'Project PLATEAU led by the Ministry of Land, Infrastructure, Transport and Tourism'
 date: 2025-06-24
 category: project
-thumbnail: 'thumbnail-test-1.png'
+author: "Eita.H"
 ---
 
 PLATEAU is a nationwide urban digital twin project in Japan promoted by the Ministry of Land, Infrastructure, Transport and Tourism (MLIT) in collaboration with various stakeholders.

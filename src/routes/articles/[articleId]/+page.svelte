@@ -20,6 +20,7 @@
         {data.metadata.category}
       </p>
       <p class="text-md text-gray-700 ml-2">{data.metadata.date}</p>
+      <p class="text-md text-gray-700 ml-2">by {data.metadata.author}</p>
     </div>
 </div>
   
