@@ -21,12 +21,12 @@ Furthermore, to realize highly convenient services, it was essential to solve is
 This development reduced the burden on geospatial information providers while enabling GIS users to participate in data utilization in an open manner.[^2]
 
 # Operating Organization of G-spatial Information Center
-The G-spatial Information Center is operated by AIGID (Association for the Promotion of Infrastructure Geospatial Information Distribution, Representative Director: Yoshihide Sekimoto) (https://aigid.jp/).
+The G-spatial Information Center is operated by AIGID (Association for the Promotion of Infrastructure Geospatial Information Distribution).[^3]
 
 A general incorporated association in Japan refers to an organization with legal personality registered for specific activity purposes, which does not aim for profit and does not distribute profits earned from business activities to its members. Based on this legal status, AIGID is expected to conduct activities fairly to promote the distribution of geospatial information without considering the commercial interests of specific organizations.
 
 # Role of G-spatial Information Center
-AIGID has been advancing activities related to developing distribution environments for the collection, distribution, and utilization of social infrastructure-related information through collaboration among industry, government, and academic institutions, with the aim of revitalizing the geospatial information industry and creating new businesses and services. Representative examples include the Digital City Service[^3], a digital twin project built using data registered in the G-spatial Information Center, and the Urban Data Challenge[^4], which supports solving regional issues using data held by local governments and other entities.
+AIGID has been advancing activities related to developing distribution environments for the collection, distribution, and utilization of social infrastructure-related information through collaboration among industry, government, and academic institutions, with the aim of revitalizing the geospatial information industry and creating new businesses and services. Representative examples include the Digital City Service[^4], a digital twin project built using data registered in the G-spatial Information Center, and the Urban Data Challenge[^5], which supports solving regional issues using data held by local governments and other entities.
 
 Through these initiatives, the G-spatial Information Center has not only served as a simple platform but has also supported the excavation of administrative data, data utilization ideas, and the materialization of applications and solutions.
 
@@ -35,5 +35,6 @@ Moving forward, the G-spatial Information Center will continue to play a fundame
 # References
 [^1]: https://front.geospatial.jp/
 [^2]: https://front.geospatial.jp/about-gic/
-[^3]: https://www.digitalsmartcity.jp/
-[^4]: http://urbandata-challenge.jp/
+[^3]: https://aigid.jp/
+[^4]: https://www.digitalsmartcity.jp/
+[^5]: http://urbandata-challenge.jp/
