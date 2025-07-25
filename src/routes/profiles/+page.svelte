@@ -1,3 +1,11 @@
+<script>
+  let isExpanded = false;
+  
+  function toggleExpanded() {
+    isExpanded = !isExpanded;
+  }
+</script>
+
 <svelte:head>
   <title>My Profile</title>
   <meta name="description" content="This is my profile." />
@@ -16,7 +24,28 @@
   <!-- 経歴 -->
   <section class="mt-6 text-left w-full">
       <h2 class="text-xl font-bold mb-3">Background</h2>
-      <p>Hi, I’m a technology research specialist with a background in development studies and GIS.<br>I studied Urban Engineering at Chiba University in Japan and earned my master’s degree in Development Studies and Urban Development from the University of Birmingham in the UK.<br>My career started in Tokyo as an urban planning coordinator, and later, I spent three years in Kandy, Sri Lanka, working on rural specialty product development.<br>After that, I took on roles in JICA and World Bank projects, coordinating the development of Ukraine’s National Spatial Data Infrastructure (NSDI) and contributing as a GIS specialist to urban water supply projects in Rwanda gaining four years of hands-on international experience.<br>Since 2019, I’ve been working as a technology research specialist, analyzing cutting-edge technology trends in the private sector to uncover new business opportunities.</p>
+      <div class="relative">
+        <div class="{isExpanded ? '' : 'overflow-hidden'}" style="{isExpanded ? '' : 'max-height: 4.5rem;'}">
+          <p class="leading-relaxed">
+            Hi, I'm a technology research specialist with a background in development studies and GIS.<br>
+            I studied Urban Engineering at Chiba University in Japan and earned my master's degree in Development Studies and Urban Development from the University of Birmingham in the UK.<br>
+            My career started in Tokyo as an urban planning coordinator, and later, I spent three years in Kandy, Sri Lanka, working on rural specialty product development.<br>
+            After that, I took on roles in JICA and World Bank projects, coordinating the development of Ukraine's National Spatial Data Infrastructure (NSDI) and contributing as a GIS specialist to urban water supply projects in Rwanda gaining four years of hands-on international experience.<br>
+            Since 2019, I've been working as a technology research specialist, analyzing cutting-edge technology trends in the private sector to uncover new business opportunities.
+          </p>
+        </div>
+        
+        {#if !isExpanded}
+          <div class="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+        {/if}
+        
+        <button 
+          on:click={toggleExpanded}
+          class="mt-3 text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors duration-200 cursor-pointer"
+        >
+          {isExpanded ? 'Show less' : 'Read more'}
+        </button>
+      </div>
       <h2 class="text-xl font-bold mt-6">Contact & SNS</h2>
       <ul class="space-y-2 mt-6">
         <li class="flex items-center">
@@ -40,3 +69,10 @@
       </ul>
   </section>
 </div>
+
+<section class="mt-16 px-4">
+  <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">About</h2>
+  <div class="prose prose-lg dark:prose-invert max-w-none">
+    <p>Japan Geospatial Times is a personal blog dedicated to exploring Japan's geospatial landscape. Here, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth analysis and the latest developments in the field.</p>
+  </div>
+</section>
