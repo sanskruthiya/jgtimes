@@ -22,9 +22,17 @@
     <div class="p-6">
         <div class="flex items-center gap-2 mb-3">
             {#if article.metadata.category}
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
-                    {article.metadata.category}
-                </span>
+                {#if Array.isArray(article.metadata.category)}
+                    {#each article.metadata.category as category}
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
+                            {category}
+                        </span>
+                    {/each}
+                {:else}
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
+                        {article.metadata.category}
+                    </span>
+                {/if}
             {/if}
             {#if article.metadata.date}
                 <time class="text-sm text-gray-500 dark:text-gray-400" datetime={article.metadata.date}>

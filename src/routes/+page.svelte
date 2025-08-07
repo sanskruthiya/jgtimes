@@ -6,7 +6,7 @@
 
     onMount(async () => {
         function startTypingAnimation() {
-            const text = "For Geospatial Enthusiasts Worldwide: Exploring Japan's Spatial Past and Present.";
+            const text = "For Geospatial Enthusiasts Worldwide: Japan's GIS Past and Present.";
             let i = 0;
             typingString = '';
             function typeWriter() {
@@ -23,7 +23,7 @@
 </script>
 
 <svelte:head>
-    <title>Japan Geospatial Times - Exploring Japan's Spatial World</title>
+    <title>Japan Geospatial Times - Exploring Japan's GIS World</title>
     <meta name="description" content="Discover Japan's rich geospatial history, modern trends, and innovations. Perfect for geospatial enthusiasts looking to explore the evolution of maps and spatial data from Japan." />
     <meta name="keywords" content="geospatial, GIS, Japan, mapping, spatial data, geography, cartography" />
     <meta property="og:title" content="Japan Geospatial Times" />
@@ -42,7 +42,7 @@
         </div>
         <div class="mt-4 mb-8">
             <p class="text-xl md:text-2xl text-center text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-                {typingString}
+                {@html typingString}
             </p>
         </div>
         <img 
@@ -65,7 +65,7 @@
     <section class="mt-16 px-4">
         <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">About</h2>
         <div class="prose prose-lg dark:prose-invert max-w-none">
-            <p>Japan Geospatial Times is a personal blog dedicated to exploring Japan's geospatial landscape. Here, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth analysis and the latest developments in the field.</p>
+            <p>Japan Geospatial Times is an information platform dedicated to exploring Japan's geospatial landscape. Currently operated as a personal blog, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth reflection and the latest developments in the field.</p>
         </div>
     </section>
 </div>

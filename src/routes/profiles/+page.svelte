@@ -73,6 +73,6 @@
 <section class="mt-16 px-4">
   <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">About</h2>
   <div class="prose prose-lg dark:prose-invert max-w-none">
-    <p>Japan Geospatial Times is a personal blog dedicated to exploring Japan's geospatial landscape. Here, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth analysis and the latest developments in the field.</p>
+    <p>Japan Geospatial Times is an information platform dedicated to exploring Japan's geospatial landscape. Currently operated as a personal blog, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth reflection and the latest developments in the field.</p>
   </div>
 </section>

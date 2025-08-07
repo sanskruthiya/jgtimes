@@ -5,6 +5,9 @@ import matter from 'gray-matter';
 interface Metadata {
   title: string;
   date: string;
+  category?: string | string[];
+  description?: string;
+  author?: string | string[];
 }
 
 interface ArticleInfo {
