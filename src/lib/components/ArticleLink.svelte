@@ -6,14 +6,14 @@
 <a
     rel="prefetch"
     href="/articles/{article.slug}"
-    class="block group bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden"
+    class="block group bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 hover:-translate-y-1 transition-all duration-300 ease-out overflow-hidden transform-gpu"
 >
     {#if article.metadata.coverImage}
         <div class="aspect-video w-full overflow-hidden">
             <img
                 src={article.metadata.coverImage}
                 alt={article.metadata.title}
-                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-200"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500 ease-out"
                 loading="lazy"
             />
         </div>
@@ -61,7 +61,7 @@
         {#if article.metadata.tags && article.metadata.tags.length > 0}
             <div class="mt-4 flex flex-wrap gap-2">
                 {#each article.metadata.tags as tag}
-                    <span class="text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">
+                    <span class="text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 cursor-pointer transform hover:scale-105">
                         #{tag}
                     </span>
                 {/each}
