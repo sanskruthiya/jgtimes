@@ -6,7 +6,7 @@
 
     onMount(async () => {
         function startTypingAnimation() {
-            const text = "For Geospatial Enthusiasts Worldwide: Japan's GIS Past and Present.";
+            const text = "For Geospatial Enthusiasts Worldwide: Exploring Japan's GIS Journey";
             let i = 0;
             typingString = '';
             function typeWriter() {
