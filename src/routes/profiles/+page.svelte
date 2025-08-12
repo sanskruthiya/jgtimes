@@ -1,6 +1,6 @@
 <script>
   import ProfileCard from '$lib/components/ProfileCard.svelte';
-  import { getAllProfiles } from '$lib/profiles/index.js';
+  import { getAllProfiles } from '$lib/profiles/index';
   
   const profiles = getAllProfiles();
 </script>

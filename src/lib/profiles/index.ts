@@ -8,7 +8,7 @@ export const profiles = [
 ];
 
 // Helper function to get profile by ID
-export function getProfile(id) {
+export function getProfile(id: string) {
   return profiles.find(profile => profile.id === id);
 }
 
