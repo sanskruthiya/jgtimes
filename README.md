@@ -48,7 +48,13 @@ There are two ways to contribute articles:
 1. **Fork this repository**
 2. **Create a new markdown file** in `articles/en/` with a descriptive filename
 3. **Add your article content** following the structure above
-4. **Submit a pull request** with your changes
+4. **Include images (if needed)**:
+   - Create a folder with your author name in `static/images/articles/[author-name]/`
+   - Use lowercase with hyphens (e.g., `eita-h`, `taro-yamada`)
+   - Place your image files in that folder
+   - Reference them: `![Description](/images/articles/author-name/your-image.jpg)`
+   - Ensure you have rights to use the images
+5. **Submit a pull request** with your changes
 
 ##### Option 2: For Non-GitHub Users (Form Submission)
 

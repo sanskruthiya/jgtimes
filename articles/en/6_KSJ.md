@@ -9,6 +9,8 @@ author: "Eita.H"
 # Overview
 Japan's "National Land Numerical Information Download Service" (Kokudo Suuchi Jouhou)[^1] is the most representative GIS data catalog provided by the Ministry of Land, Infrastructure, Transport and Tourism (MLIT). It offers various geospatial information about Japan's national land as free GIS data. Since it provides comprehensive coverage of fundamental spatial information about the country, it is one of the most accessible and frequently used services for Japanese GIS users, from beginners to experts.
 
+![KSJ Image](/images/articles/eita-h/KSJ.webp)
+
 # Main Data Categories
 As of 2025, the National Land Numerical Information Download Service website[^1] provides three main menu categories: "National Land Numerical Information", "Location Reference Information" and "National Survey", along with a dedicated web mapping system for simple data browsing.
 
