@@ -1,6 +1,18 @@
 <script>
-    export let data;
+    let { data } = $props();
+    import { onMount } from 'svelte';
+    import { fade, fly } from 'svelte/transition';
     import ArticleLink from '$lib/components/ArticleLink.svelte';
+    
+    let showHeader = $state(false);
+    let showContent = $state(false);
+    let showSidebar = $state(false);
+
+    onMount(() => {
+        setTimeout(() => showHeader = true, 100);
+        setTimeout(() => showContent = true, 400);
+        setTimeout(() => showSidebar = true, 700);
+    });
 </script>
 
 <svelte:head>
@@ -8,7 +20,8 @@
   <meta name="description" content={data.metadata?.description || data.metadata?.title || 'Article'} />
 </svelte:head>
   
-<div class="pb-12 px-0 md:pt-3 md:px-6 flex flex-col items-center">
+{#if showHeader}
+<div class="pb-12 px-0 md:pt-3 md:px-6 flex flex-col items-center" in:fade="{{ duration: 600, delay: 0 }}">
     <!--
     <div>
       <img　class="h-96 w-full object-cover rounded-lg"　src={`/thumbnails/${data.metadata?.thumbnail}`}/>
@@ -41,18 +54,23 @@
       {/if}
     </div>
 </div>
+{/if}
   
 <div class="grid grid-cols-1 md:grid-cols-[3fr,auto] gap-4 mx-auto max-w-[1280px]">
-    <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-    <article class="markdown-body mb:pr-4 overflow-auto">{@html data.htmlContent}</article>
-    <aside class="md:w-[360px] md:pl-4 md:pt-0 pt-4">
-        <h2 class="text-2xl font-semibold mb-4">More Articles</h2>
-        <ul>
-            {#each (data.articles || []) as article}
-            <li>
-                <ArticleLink {article} />
-            </li>
-            {/each}
-        </ul>
-    </aside>
+    {#if showContent}
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+        <article class="markdown-body mb:pr-4 overflow-auto" in:fade="{{ duration: 800, delay: 0 }}">{@html data.htmlContent}</article>
+    {/if}
+    {#if showSidebar}
+        <aside class="md:w-[360px] md:pl-4 md:pt-0 pt-4" in:fly="{{ x: 30, duration: 600, delay: 0 }}">
+            <h2 class="text-2xl font-semibold mb-4">More Articles</h2>
+            <ul>
+                {#each (data.articles || []) as article}
+                <li>
+                    <ArticleLink {article} />
+                </li>
+                {/each}
+            </ul>
+        </aside>
+    {/if}
 </div>
