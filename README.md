@@ -4,6 +4,17 @@ A simple and modern information platform exploring Japan's GIS past and present,
 
 ## 📝 Contributing Articles
 
+### Editorial Principles
+
+This site embodies the spirit of FOSS4G: sharing knowledge, encouraging open collaboration, and highlighting social impact.
+
+Articles may introduce both open-source and commercial products or services.
+However, the focus should be on case studies, public benefits, technical insights, or lessons learned, rather than pure commercial promotion.
+
+Contributions should be well-grounded (whether in facts, professional experience, or expert insights), relevant to GIS in Japan, and useful for an international audience.
+Diverse perspectives are welcome, as long as they contribute to the broader GIS community's understanding.
+Submissions may be edited for clarity, accuracy, and balance before publication.
+
 ### For Contributors
 
 You can contribute articles to JGTimes by adding markdown files to the `articles/en/` directory. The site automatically detects and displays new articles without any manual configuration.
@@ -60,7 +71,7 @@ There are two ways to contribute articles:
 
 If you're not familiar with GitHub, you can submit your article through our submission form (powered by Google Forms):
 
-**📝 [Submit Article via Google Forms](https://docs.google.com/forms/d/e/1FAIpQLSfRXUNavyCrIdteZ9tsYNgNiMrCpdKxNiGGzNSPumICV1eUZg/viewform?usp=sharing&ouid=108215120576251981944)**
+**📝 [Submit Article via Google Forms](https://forms.gle/vsx2G7Cgat8xWyLg9)**
 
 Simply fill out the form with your article details, and your submission will be reviewed and added to the site.
 

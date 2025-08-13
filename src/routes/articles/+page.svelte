@@ -14,12 +14,15 @@
 
 <div class="max-w-6xl mx-auto px-4">
     <header class="mb-12 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800 dark:text-gray-200">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-800 dark:text-gray-200">
             Articles
         </h1>
-        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Explore our collection of articles covering Japan's rich geospatial history,
-            modern mapping technologies, and innovative spatial applications.
+        <p class="text-sm text-gray-500 dark:text-gray-500">
+            Have topic suggestions for future articles?
+            <br>
+            <a href="https://github.com/sanskruthiya/jgtimes/issues/new?template=topic-request.md&title=Topic%20Request%3A%20" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Request via GitHub</a>
+            or 
+            <a href="https://forms.gle/cKE1gudmUUoUv7R77" target="_blank" rel="noopener noreferrer" class="text-green-600 dark:text-green-400 hover:underline">submit a form</a>.
         </p>
     </header>
 
