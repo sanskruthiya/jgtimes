@@ -1,5 +1,7 @@
 # Japan Geospatial Times (JGTimes)
 
+🌐 **Live Site**: [https://jgtimes.org/](https://jgtimes.org/)
+
 A simple and modern information platform exploring Japan's GIS past and present, built with SvelteKit and designed for geospatial enthusiasts worldwide.
 
 ## 📝 Contributing Articles
