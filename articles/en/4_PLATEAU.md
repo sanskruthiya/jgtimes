@@ -1,7 +1,7 @@
 ---
-title: "Project PLATEAU"
+title: "Project PLATEAU: Government-led 3D City Model in Japan"
 description: 'Project PLATEAU led by the Ministry of Land, Infrastructure, Transport and Tourism'
-date: 2025-06-24
+date: 2025-08-01
 category: project
 author: "Eita.H"
 ---
@@ -13,6 +13,9 @@ Launched in 2020, by 2021 it had developed and released 3D city models as open d
 - Project PLATEAU[^1]
 - PLATEAU VIEW[^2]
 - G-Spatial Information Center PLATEAU Portal Site[^3]
+
+![PLATEAU View Sample Image as of 2025/08/01](/images/articles/eita-h/PLATEAUVIEW.webp)
+PLATEAU View, accessed August 1, 2025[^2]
 
 # 1. Overview of Project PLATEAU
 This project, led by the Ministry of Land, Infrastructure, Transport and Tourism, aims to develop and publish high-precision 3D city models for cities throughout Japan.

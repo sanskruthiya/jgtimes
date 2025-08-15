@@ -91,7 +91,12 @@
     {/if}
 
     {#if showAbout}
-        <section class="mt-16 px-4" in:fly="{{ y: 30, duration: 600, delay: 0 }}">
+        <!-- Divider -->
+        <div class="mt-16 mb-8 flex justify-center">
+            <div class="w-24 h-0.5 bg-gray-300 dark:bg-gray-600"></div>
+        </div>
+        
+        <section class="px-4" in:fly="{{ y: 30, duration: 600, delay: 0 }}">
             <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">About</h2>
             <div class="prose prose-lg dark:prose-invert max-w-none">
                 <p>Japan Geospatial Times is an information platform dedicated to exploring Japan's geospatial landscape. Currently operated as a personal blog, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth reflection and the latest developments in the field.</p>

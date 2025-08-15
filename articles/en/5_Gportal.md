@@ -1,9 +1,9 @@
 ---
 title: "Geospatial Information Portal in Japan: G-spatial Information Center"
 description: 'About Geospatial Information Portal in Japan: G-spatial Information Center'
-date: 2025-07-09
+date: 2025-08-09
 category: [service, government]
-author: ["Eita.H", "and more.."]
+author: ["Eita.H", "anonymous"]
 ---
 
 # Overview of G-spatial Information Center

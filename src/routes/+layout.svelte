@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { onMount } from 'svelte';
+	import { afterNavigate } from '$app/navigation';
 	let { children } = $props();
 	let isDarkMode = $state(false);
 	let isMenuOpen = $state(false);
@@ -10,6 +11,11 @@
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 			isDarkMode = true;
 		}
+	});
+
+	// Close mobile menu after navigation
+	afterNavigate(() => {
+		isMenuOpen = false;
 	});
 </script>
 

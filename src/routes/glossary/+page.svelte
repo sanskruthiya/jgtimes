@@ -130,6 +130,14 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">3D City Model</td>
           </tr>
           <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">統合型GIS</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Integrated GIS</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">個別業務GIS</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Task-specialized GIS</td>
+          </tr>
+          <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">JPGIS</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Japan Profile for Geographic Information Standards</td>
           </tr>
