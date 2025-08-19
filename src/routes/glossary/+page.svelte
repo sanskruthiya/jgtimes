@@ -27,11 +27,11 @@
         </thead>
         <tbody>
           <tr>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土交通省</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土交通省(MLIT)</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Ministry of Land, Infrastructure, Transport and Tourism</td>
           </tr>
           <tr>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土地理院</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土地理院(GSI)</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Geospatial Information Authority of Japan</td>
           </tr>
           <tr>
@@ -39,7 +39,15 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Cabinet Office</td>
           </tr>
           <tr>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">経団連</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">一般社団法人 社会基盤情報流通推進協議会(AIGID)</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Association for Promotion of Infrastructure Geospatial Information Distribution</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GIS関連省庁連絡会議</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GIS-Related Ministries Liaison Council</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">日本経済団体連合会(経団連)</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Japan Business Federation</td>
           </tr>
         </tbody>
@@ -64,16 +72,8 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Basic Act on the Advancement of Utilizing Geospatial Information</td>
           </tr>
           <tr>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土形成計画</td>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">National Spatial Strategy</td>
-          </tr>
-          <tr>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">都市再生特別措置法</td>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Act on Special Measures for Urban Renaissance</td>
-          </tr>
-          <tr>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">デジタル田園都市国家構想</td>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Digital Garden City Nation Initiative</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">地理空間情報活用推進基本計画</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Basic Plan for the Advancement of Utilizing Geospatial Information</td>
           </tr>
         </tbody>
       </table>
@@ -97,8 +97,8 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Project PLATEAU</td>
           </tr>
           <tr>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土数値情報ダウンロードサービス</td>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">National Land Numerical Information Download Service</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土数値情報</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">National Land Numerical Information</td>
           </tr>
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">地理院地図</td>
@@ -107,6 +107,10 @@
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">G空間情報センター</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">G-Spatial Information Center</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">準天頂衛星システム「みちびき」</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Quasi-Zenith Satellite System "Michibiki"</td>
           </tr>
         </tbody>
       </table>

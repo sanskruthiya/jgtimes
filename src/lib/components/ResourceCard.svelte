@@ -21,8 +21,8 @@
     </a>
     <div class="p-4 flex flex-col justify-between flex-grow border-t border-gray-100 dark:border-gray-700 mt-4">
       <div>
-          <h2 class="text-lg font-bold mb-2">{resource.title_jp}</h2>
-          <h3 class="text-lg font-bold mb-2">{resource.title_en}</h3>
+          <h2 class="text-lg font-bold mb-1">{resource.title_en}</h2>
+          <h3 class="text-sm text-gray-600 dark:text-gray-400 mb-2">{resource.title_jp}</h3>
           <button
             class="w-full flex items-center justify-between px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 mb-2"
             on:click={() => isExpanded = !isExpanded}
@@ -43,14 +43,12 @@
           <div
             id="description-{resource.title_en.toLowerCase().replace(/ /g, '-')}"
             class="overflow-hidden transition-all duration-300 ease-in-out"
-            style="max-height: {isExpanded ? descriptionHeight + 'px' : '0px'};"
+            style="max-height: {isExpanded ? 'none' : '0px'};"
           >
             <div
               class="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 transform transition-transform duration-300 ease-in-out {isExpanded ? 'translate-y-0 opacity-100' : '-translate-y-2 opacity-0'}"
             >
               <p
-                bind:this={descriptionElement}
-                bind:offsetHeight={descriptionHeight}
                 class="text-base text-gray-700 dark:text-gray-300 leading-relaxed"
               >
                 {resource.description}

@@ -7,21 +7,22 @@ author: ["Eita.H", "anonymous"]
 ---
 
 # Overview of G-spatial Information Center
-The G-spatial Information Center[^1] is a data distribution support platform designed to promote the circulation of geospatial data developed by various organizations for diverse purposes, and to provide backend support for data users in solving social issues. It was established and has been operated since 2016 by AIGID (Association for the Promotion of Infrastructure Geospatial Information Distribution).[^2]
+The G-spatial Information Center[^1] is a data distribution platform designed to promote the sharing of geospatial data developed by various organizations for diverse purposes, and to to assist data users in solving social issues.
+It was established and has been operated since 2016 by AIGID (Association for Promotion of Infrastructure Geospatial Information Distribution).[^2]
 
 # Background of G-spatial Information Center's Establishment
-In Japan, following the introduction of the Basic Plan for the Promotion of Geospatial Information Utilization in 2008, various data (such as forestry, meteorological, airport, port, road, and river data) began to be actively released to the public by national and local governments.
+In Japan, following the introduction of the Basic Plan for the Advancement of Utilizing Geospatial Information in 2008, various data (such as forestry, meteorological, airport, port, road, and river data) began to be actively released to the public by national and local governments.
 
 The providers of such geospatial information are diverse, including not only government agencies but also private companies, universities, local communities, and citizen developers. Moreover, the provision conditions, update frequencies, and rights associated with these datasets vary significantly. When each entity creates and publishes data separately, the utilization of such data becomes inefficient.
 
-To address this challenge, the "Council for the Promotion of Infrastructure Geospatial Information Distribution" was established in September 2011, with the participation of industry, government, and academic institutions to develop a distribution environment for the collection, distribution, and utilization of social infrastructure-related information.
+To address this challenge, the "Council for the Promotion of Infrastructure Geospatial Information Distribution" (predecessor to AIGID) was established in September 2011, with the participation of industry, government, and academic institutions to develop a distribution environment for the collection, distribution, and utilization of social infrastructure-related information.
 
 Furthermore, to realize highly convenient services, it was essential to solve issues such as accelerating data acquisition, reducing costs, and clarifying data quality. Therefore, in November 2016, the G-spatial Information Center was established as a platform to centralize data distribution.
 
 This development reduced the burden on geospatial information providers while enabling GIS users to participate in data utilization in an open manner.[^2]
 
 # Operating Organization of G-spatial Information Center
-The G-spatial Information Center is operated by AIGID (Association for the Promotion of Infrastructure Geospatial Information Distribution).[^3]
+The G-spatial Information Center is operated by AIGID (Association for Promotion of Infrastructure Geospatial Information Distribution).[^3]
 
 A general incorporated association in Japan refers to an organization with legal personality registered for specific activity purposes, which does not aim for profit and does not distribute profits earned from business activities to its members. Based on this legal status, AIGID is expected to conduct activities fairly to promote the distribution of geospatial information without considering the commercial interests of specific organizations.
 

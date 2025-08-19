@@ -5,7 +5,7 @@
       "description": "The G Spatial Information Center, managed by Japan's Geospatial Information Authority (GSI), serves as a hub for accessing and sharing geospatial data from various public and private sources. It provides datasets such as satellite imagery, topographic maps, and 3D city models, supporting applications in urban planning, disaster management, and research. The platform promotes open data use and collaboration in the geospatial field.",
       "category": ["dataportal", "government"],
       "link": "https://front.geospatial.jp/",
-      "image": "/resources/GSIcenter.webp"
+      "image": "/resources/images/GSIcenter.webp"
     },
     {
       "title_jp": "国土数値情報ダウンロードサイト",
@@ -13,14 +13,38 @@
       "description": "The National Land Numerical Information Download Service, operated by Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT), provides access to a wide range of geospatial datasets. These datasets include administrative boundaries, land use, transportation networks, and disaster-related information, available in formats such as Shapefile and GML for GIS applications. The service aims to support research, urban planning, and disaster prevention efforts.",
       "category": ["dataportal", "government"],
       "link": "https://nlftp.mlit.go.jp/ksj/",
-      "image": "/resources/KSJ.webp"
+      "image": "/resources/images/KSJ.webp"
     },
     {
-      "title_jp": "Project PLATEAU",
+      "title_jp": "PLATEAU",
       "title_en": "Project PLATEAU",
       "description": "Project PLATEAU, led by Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT), is a national initiative to develop and provide open 3D urban models of cities across Japan. The project promotes the use of 3D geospatial data in urban planning, disaster prevention, and smart city development. The datasets are available in CityGML format and can be visualized using platforms like Cesium and Unity, enabling diverse applications in research and industry.",
-      "category": ["dataportal", "government"],
+      "category": ["project", "government"],
       "link": "https://www.mlit.go.jp/plateau/",
-      "image": "/resources/PLATEAU.webp"
+      "image": "/resources/images/PLATEAU.webp"
+    },
+    {
+      "title_jp": "国土地理院",
+      "title_en": "Geospatial Information Authority of Japan",
+      "description": "The Geospatial Information Authority of Japan (GSI) is the national organization that conducts basic survey and mapping and instructs related organizations to clarify the conditions of land in Japan and that provides the results of surveys to help improve this land.",
+      "category": ["organization"],
+      "link": "https://www.gsi.go.jp/ENGLISH/index.html",
+      "image": "/resources/images/ImageComingSoon.webp"
+    },
+    {
+      "title_jp": "OSGeo日本支部",
+      "title_en": "OSGeo Japan",
+      "description": "OSGeo Japan is the official Japanese chapter of the Open Source Geospatial Foundation (OSGeo), which was established to support and build high-quality open source geospatial software. The foundation aims to promote community-driven use and development of open source projects. OSGeo Japan organizes conferences, workshops, and educational activities to advance FOSS4G (Free and Open Source Software for Geospatial) technologies in Japan.",
+      "category": ["organization"],
+      "link": "https://www.osgeo.jp/",
+      "image": "/resources/images/ImageComingSoon.webp"
+    },
+    {
+      "title_jp": "Code for Japan",
+      "title_en": "Code for Japan",
+      "description": "Code for Japan is a non-profit organization that leverages technology to solve local issues. Inspired by the activities of the U.S. non-profit organization Code for America, it was launched around 2013 as a Japanese counterpart. It supports and operates projects that involve collaboration among government, businesses, and citizens, focusing on open data and civic participation.",
+      "category": ["organization"],
+      "link": "https://www.code4japan.org/en",
+      "image": "/resources/images/ImageComingSoon.webp"
     }
 ]
