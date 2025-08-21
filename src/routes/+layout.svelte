@@ -6,10 +6,34 @@
 	let isDarkMode = $state(false);
 	let isMenuOpen = $state(false);
 
+	// Function to toggle dark mode
+	function toggleDarkMode() {
+		isDarkMode = !isDarkMode;
+		if (typeof window !== 'undefined') {
+			localStorage.setItem('darkMode', isDarkMode.toString());
+			// Update document class immediately
+			if (isDarkMode) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
+		}
+	}
+
 	onMount(() => {
-		// Check system preference for dark mode
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+		// Check localStorage first, then system preference
+		const savedDarkMode = localStorage.getItem('darkMode');
+		if (savedDarkMode !== null) {
+			isDarkMode = savedDarkMode === 'true';
+		} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 			isDarkMode = true;
+		}
+		
+		// Apply dark mode class to document
+		if (isDarkMode) {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
 		}
 	});
 
@@ -23,7 +47,7 @@
 	<header class="relative flex items-center justify-between px-1 md:px-3 md:py-1 bg-white dark:bg-gray-900 shadow-sm transition-colors duration-200">
 		<div>
 			<a href="/" class="flex items-center">
-				<img src="/images/logo.png" alt="Japan Geospatial Times Logo" class="h-14 w-auto" />
+				<img src="/images/logo.png" alt="Japan Geospatial Times Logo" class="h-14 w-auto rounded-lg" />
 			</a>
 		</div>
 
@@ -49,7 +73,7 @@
 			<a href="/glossary" class="text-gray-800 dark:text-gray-200 px-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Glossary</a>
 			<a href="/profiles" class="text-gray-800 dark:text-gray-200 px-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">Profile</a>
 			<button 
-				onclick={() => isDarkMode = !isDarkMode}
+				onclick={toggleDarkMode}
 				class="ml-4 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
 				aria-label="Toggle dark mode"
 			>
@@ -72,6 +96,23 @@
 				<a href="/resources" class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Resources</a>
 				<a href="/glossary" class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Glossary</a>
 				<a href="/profiles" class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Profile</a>
+				<button 
+					onclick={toggleDarkMode}
+					class="flex items-center w-full px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+					aria-label="Toggle dark mode"
+				>
+					{#if isDarkMode}
+						<svg class="w-5 h-5 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" />
+						</svg>
+						<span>Light Mode</span>
+					{:else}
+						<svg class="w-5 h-5 text-gray-800 dark:text-gray-200 mr-2" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+						</svg>
+						<span>Dark Mode</span>
+					{/if}
+				</button>
 			</nav>
 		{/if}
 	</header>

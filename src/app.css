@@ -1,3 +1,71 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* Dark mode styles for markdown content */
+.markdown-body {
+  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+}
+
+.dark .markdown-body {
+  color-scheme: dark;
+}
+
+.dark .markdown-body h1,
+.dark .markdown-body h2,
+.dark .markdown-body h3,
+.dark .markdown-body h4,
+.dark .markdown-body h5,
+.dark .markdown-body h6 {
+  @apply text-gray-100;
+}
+
+.dark .markdown-body p,
+.dark .markdown-body li {
+  @apply text-gray-200;
+}
+
+.dark .markdown-body blockquote {
+  @apply border-l-gray-600 bg-gray-800 text-gray-200;
+}
+
+.dark .markdown-body code {
+  @apply bg-gray-800 text-gray-200;
+}
+
+.dark .markdown-body pre {
+  @apply bg-gray-800;
+}
+
+.dark .markdown-body table {
+  @apply border-gray-600;
+}
+
+.dark .markdown-body th,
+.dark .markdown-body td {
+  @apply border-gray-600;
+}
+
+.dark .markdown-body th {
+  @apply bg-gray-800;
+}
+
+/* Dark mode image adjustments */
+.dark .markdown-body img {
+  filter: brightness(0.9) contrast(1.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific adjustments for homepage elements */
+.dark img[src*="background_main"] {
+  filter: brightness(0.8) contrast(1.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.4);
+}
+
+/* Keep certain images unchanged */
+.dark img[src*="logo"], 
+.dark img[src*="profile"] {
+  filter: none; /* Keep logos and profile images unchanged */
+}
