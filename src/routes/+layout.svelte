@@ -16,10 +16,22 @@
 			} else {
 				document.documentElement.classList.remove('dark');
 			}
+			// Save to localStorage
+			localStorage.setItem('darkMode', isDarkMode.toString());
 		}
 	}
 
-	// Always start in light mode - no localStorage to avoid SSR hydration issues
+	// Initialize dark mode from localStorage on client side
+	if (typeof window !== 'undefined') {
+		const savedDarkMode = localStorage.getItem('darkMode');
+		if (savedDarkMode === 'true') {
+			isDarkMode = true;
+			document.documentElement.classList.add('dark');
+		} else {
+			isDarkMode = false;
+			document.documentElement.classList.remove('dark');
+		}
+	}
 
 	// Close mobile menu after navigation
 	afterNavigate(() => {
