@@ -1,6 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-	import { onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
 	let { children } = $props();
 	let isDarkMode = $state(false);
@@ -11,7 +10,6 @@
 		isDarkMode = !isDarkMode;
 		isMenuOpen = false; // Close mobile menu when toggling dark mode
 		if (typeof window !== 'undefined') {
-			localStorage.setItem('darkMode', isDarkMode.toString());
 			// Update document class immediately
 			if (isDarkMode) {
 				document.documentElement.classList.add('dark');
@@ -21,22 +19,7 @@
 		}
 	}
 
-	onMount(() => {
-		// Check localStorage first, then system preference
-		const savedDarkMode = localStorage.getItem('darkMode');
-		if (savedDarkMode !== null) {
-			isDarkMode = savedDarkMode === 'true';
-		} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			isDarkMode = true;
-		}
-		
-		// Apply dark mode class to document
-		if (isDarkMode) {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
-	});
+	// Always start in light mode - no localStorage to avoid SSR hydration issues
 
 	// Close mobile menu after navigation
 	afterNavigate(() => {
