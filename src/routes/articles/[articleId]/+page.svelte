@@ -43,13 +43,13 @@
         {/if}
       {/if}
       {#if data.metadata?.date}
-        <p class="text-md text-gray-700 ml-2">{data.metadata.date}</p>
+        <p class="text-md text-gray-700 dark:text-gray-300 ml-2">{data.metadata.date}</p>
       {/if}
       {#if data.metadata?.author}
         {#if Array.isArray(data.metadata.author)}
-          <p class="text-md text-gray-700 ml-2">by {data.metadata.author.join(', ')}</p>
+          <p class="text-md text-gray-700 dark:text-gray-300 ml-2">by {data.metadata.author.join(', ')}</p>
         {:else}
-          <p class="text-md text-gray-700 ml-2">by {data.metadata.author}</p>
+          <p class="text-md text-gray-700 dark:text-gray-300 ml-2">by {data.metadata.author}</p>
         {/if}
       {/if}
     </div>
