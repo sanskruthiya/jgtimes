@@ -3,7 +3,7 @@ export default {
   name: 'Eita.H',
   title: 'Technology Analyst',
   // image: '/profile/eitoh.webp', // Uncomment and add image file to static/profile/ when available
-  background: `Hi, I'm a technology research specialist with a background in development studies and GIS.
+  background: `I am a technology research specialist with a background in development studies and GIS.
 I studied Urban Engineering at Chiba University in Japan and earned my master's degree in Development Studies and Urban Development from the University of Birmingham in the UK.
 My career started in Tokyo as an urban planning coordinator, and later, I spent three years in Kandy, Sri Lanka, working on rural specialty product development.
 After that, I took on roles in JICA and World Bank projects, coordinating the development of Ukraine's National Spatial Data Infrastructure (NSDI) and contributing as a GIS specialist to urban water supply projects in Rwanda gaining four years of hands-on international experience.

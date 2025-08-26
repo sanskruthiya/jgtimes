@@ -43,7 +43,7 @@
 	<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-1 md:px-3 md:py-1 bg-white dark:bg-gray-900 shadow-sm transition-colors duration-200">
 		<div>
 			<a href="/" class="flex items-center">
-				<img src="/images/logo.png" alt="Japan Geospatial Times Logo" class="h-14 w-auto rounded-lg" />
+				<img src="/images/logo.webp" alt="Japan Geospatial Times Logo" class="h-14 w-auto rounded-lg" />
 			</a>
 		</div>
 

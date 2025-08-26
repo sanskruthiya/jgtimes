@@ -99,7 +99,7 @@
         <section class="px-4" in:fly="{{ y: 30, duration: 600, delay: 0 }}">
             <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">About</h2>
             <div class="prose prose-lg dark:prose-invert max-w-none">
-                <p>Japan Geospatial Times is an information platform dedicated to exploring Japan's geospatial landscape. Currently operated as a personal blog, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth reflection and the latest developments in the field.</p>
+                <p>Launched in 2025, Japan Geospatial Times is an information platform dedicated to exploring Japan's geospatial landscape. Currently operated as a personal blog, I share insights into the fascinating intersection of traditional Japanese cartography and modern mapping technologies, bringing you in-depth reflection and the latest developments in the field.</p>
                 
                 <h3 class="text-xl font-semibold mt-8 mb-4 text-gray-800 dark:text-gray-200">Community Requests</h3>
                 <p>Want to read about specific GIS topics in Japan? Your topic suggestions are always welcome via GitHub Issues or Google Forms.</p>
