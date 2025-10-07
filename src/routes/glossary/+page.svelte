@@ -50,6 +50,10 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">日本経済団体連合会(経団連)</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Japan Business Federation</td>
           </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">宇宙航空研究開発機構(JAXA)</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Japan Aerospace Exploration Agency</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -74,6 +78,10 @@
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">地理空間情報活用推進基本計画</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Basic Plan for the Advancement of Utilizing Geospatial Information</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">宇宙基本計画</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Basic Plan on Space Policy</td>
           </tr>
         </tbody>
       </table>
@@ -144,6 +152,18 @@
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">JPGIS</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Japan Profile for Geographic Information Standards</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GNSS</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Global Navigation Satellite System</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GPS</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Global Positioning System</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">QZSS</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Quasi-Zenith Satellite System</td>
           </tr>
         </tbody>
       </table>
