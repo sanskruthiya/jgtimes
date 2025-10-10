@@ -17,11 +17,19 @@
     },
     {
       "title_jp": "PLATEAU",
-      "title_en": "Project PLATEAU",
+      "title_en": "Project PLATEAU Official Website",
       "description": "Project PLATEAU, led by Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT), is a national initiative to develop and provide open 3D urban models of cities across Japan. The project promotes the use of 3D geospatial data in urban planning, disaster prevention, and smart city development. The datasets are available in CityGML format and can be visualized using platforms like Cesium and Unity, enabling diverse applications in research and industry.",
       "category": ["project", "government"],
       "link": "https://www.mlit.go.jp/plateau/",
       "image": "/resources/images/PLATEAU.webp"
+    },
+    {
+      "title_jp": "準天頂衛星みちびき",
+      "title_en": "QZSS Michibiki Official Website",
+      "description": "The Quasi-Zenith Satellite System (QZSS), known as 'Michibiki' in Japanese, is Japan's regional satellite navigation system that enhances GPS signals in the Asia-Oceania region. Developed by the Japanese government, it provides highly precise positioning information with centimeter-level accuracy, supporting applications in autonomous vehicles, precision agriculture, and disaster management. The system consists of multiple satellites in quasi-zenith orbits, ensuring stable coverage even in urban canyons and mountainous areas where GPS signals may be obstructed.",
+      "category": ["project", "infrastructure", "government"],
+      "link": "https://qzss.go.jp/",
+      "image": "/resources/images/QZSS.webp"
     },
     {
       "title_jp": "国土地理院",
@@ -37,7 +45,7 @@
       "description": "OSGeo Japan is the official Japanese chapter of the Open Source Geospatial Foundation (OSGeo), which was established to support and build high-quality open source geospatial software. The foundation aims to promote community-driven use and development of open source projects. OSGeo Japan organizes conferences, workshops, and educational activities to advance FOSS4G (Free and Open Source Software for Geospatial) technologies in Japan.",
       "category": ["organization"],
       "link": "https://www.osgeo.jp/",
-      "image": "/resources/images/ImageComingSoon.webp"
+      "image": "/resources/images/OSGeoJapan.webp"
     },
     {
       "title_jp": "Code for Japan",
