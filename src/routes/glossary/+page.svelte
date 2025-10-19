@@ -120,6 +120,10 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">準天頂衛星システム「みちびき」</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Quasi-Zenith Satellite System "Michibiki"</td>
           </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">電子国土ウェブマッピングシステム</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Digital National Land Web Mapping System</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -164,6 +168,10 @@
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">QZSS</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Quasi-Zenith Satellite System</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土地理院最適化ベクトルタイル</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GSI-optimized vector tiles</td>
           </tr>
         </tbody>
       </table>
