@@ -54,5 +54,37 @@
       "category": ["organization"],
       "link": "https://www.code4japan.org/en",
       "image": "/resources/images/ImageComingSoon.webp"
+    },
+    {
+      "title_jp": "Mini Tokyo 3D",
+      "title_en": "Mini Tokyo 3D",
+      "description": "Mini Tokyo 3D is a real-time 3D digital twin application that visualizes Tokyo's public transportation system. Developed by Akihiko Kusanagi, it displays the movements of trains, buses, and aircraft in Tokyo and surrounding areas with stunning 3D graphics. The application won the grand prize in the Tokyo Public Transportation Open Data Competition and supports multiple languages, making it accessible to international users.",
+      "category": ["application", "digitaltwin", "opensource"],
+      "link": "https://minitokyo3d.com/",
+      "image": "/resources/images/ImageComingSoon.webp"
+    },
+    {
+      "title_jp": "公共交通オープンデータセンター",
+      "title_en": "Public Transportation Open Data Center",
+      "description": "The Public Transportation Open Data Center provides one-stop access to transportation data from operators participating in the Public Transportation Open Data Council. It supports comprehensive data from railway, bus, aviation, and passenger ship operators, including real-time information. The center delivers pre-processed data through REST APIs in standardized JSON format, with GTFS format also available for bus and passenger ship data.",
+      "category": ["dataportal", "api", "government"],
+      "link": "https://www.odpt.org/",
+      "image": "/resources/images/ImageComingSoon.webp"
+    },
+    {
+      "title_jp": "GTFS-JP",
+      "title_en": "GTFS Japan",
+      "description": "GTFS-JP is the Japanese implementation of the General Transit Feed Specification (GTFS), a standard format for public transportation schedules and geographic information. It enables developers to create applications using standardized public transportation data, supporting route planning, real-time updates, and transportation analysis across Japan.",
+      "category": ["standard", "api"],
+      "link": "https://www.gtfs.jp/",
+      "image": "/resources/images/ImageComingSoon.webp"
+    },
+    {
+      "title_jp": "ゼンリン",
+      "title_en": "Zenrin",
+      "description": "Zenrin is Japan's leading map provider company, known for its highly detailed and accurate mapping data. The company provides comprehensive geospatial information including road networks, building footprints, and address data that powers many navigation systems and location-based services in Japan.",
+      "category": ["private", "mapprovider"],
+      "link": "https://www.zenrin.co.jp/",
+      "image": "/resources/images/ImageComingSoon.webp"
     }
 ]

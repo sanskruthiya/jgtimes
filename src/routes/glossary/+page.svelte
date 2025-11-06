@@ -54,6 +54,10 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">宇宙航空研究開発機構(JAXA)</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Japan Aerospace Exploration Agency</td>
           </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">公共交通オープンデータセンター</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Public Transportation Open Data Center</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -144,6 +148,18 @@
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">3D都市モデル</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">3D City Model</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">デジタルツイン</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Digital Twin</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GTFS</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">General Transit Feed Specification</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">公共交通オープンデータ（ODPT） API</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Open Data for Public Transportation API</td>
           </tr>
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">統合型GIS</td>
