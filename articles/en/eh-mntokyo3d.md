@@ -26,7 +26,7 @@ MiniTokyo3D image, accessed November 4, 2025[^1]
 Mini Tokyo 3D was developed by software engineer **Akihiko Kusanagi**.[^2]
 The development was triggered in 2019 by the **"Tokyo Public Transportation Open Data Competition"**, a public competition hosted by the Public Transportation Open Data Center.[^2] [^7]
 
-One of the purposes of this contest was to **"enable foreign visitors to navigate Tokyo's public transportation during the Tokyo Olympics"**. [^3]
+One of the purposes of this contest was to **"enable foreign visitors to navigate Tokyo's public transportation during the Tokyo Olympics"**.[^3]
 However, the developer stated, "I personally wanted to create an interesting digital twin, and I was looking for good data for that purpose when I came across this competition".[^3]
 
 Therefore, this development can be characterized as a project that began when the **developer's personal interests aligned with available data**, rather than being driven by business or social needs.
@@ -55,7 +55,7 @@ The main features are as follows:
 - Integration with live camera footage (YouTube) to verify correspondence with the real world.
 - Support for 4 languages (Japanese, English, Chinese, Korean). Additionally, the user interface supports Thai, Nepali, Portuguese, French, Spanish, and German.[^1]
 
-By combining these elements, Mini Tokyo 3D has become a highly sophisticated digital twin application that allows users to experience a **real-time moving city**.
+By combining these elements, Mini Tokyo 3D has become **a highly sophisticated digital twin application** that allows users to experience a real-time moving city.
 
 # Technical Features
 Mini Tokyo 3D is built on **Mapbox GL JS, combined with Three.js and deckgl**.[^2]
@@ -67,7 +67,7 @@ Additionally, proprietary logic has been implemented to correct data update dela
 
 There are also innovations in visual representation, where **moving objects are simplified as color-coded box shapes** to reduce rendering load while supporting intuitive understanding.
 
-For the background map, OpenStreetMap was initially used, but it has now transitioned to **Zenrin (Japan's most famous map provider company) through integration with MapBox**.[^2]
+For the background map, OpenStreetMap was initially used, but has now been replaced with **Zenrin (Japan's most famous map provider company) through integration with MapBox**.[^2]
 
 In this way, Mini Tokyo 3D achieves a **balance between design and technical optimization**, making it an excellent reference model for map applications and digital twin development in Japan.
 
@@ -84,7 +84,7 @@ This can be described as an **urban understanding promotion tool** that visualiz
 The development of Mini Tokyo 3D can be said to be one of **the successful examples of Japan's open data policy bearing fruit**.
 
 This app was born from a public competition to promote the utilization of open data and grew into a globally recognized achievement by an individual developer.
-This is a symbolic case showing that **publishing data can elicit creative citizen participation**.
+This is a symbolic case showing that **publishing data can elicit creative individual participation**.
 
 The following four points are particularly noteworthy:
 
@@ -100,7 +100,7 @@ The following four points are particularly noteworthy:
 4. **📚 Technical implementation model**  
    The code for this application is published as open source, serving as a model for similar data utilization.
 
-Like this case, there are many projects in Japan where citizens use open data to rediscover and share their own cities.
+Like this case, there are many projects in Japan where individuals use open data to rediscover and share cities.
 
 Open data is becoming not just a means of information disclosure by government, but **a catalyst for citizens to deeply understand the cities they live in**.
 
