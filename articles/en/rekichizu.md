@@ -77,7 +77,7 @@ Since then, Kato and the MIERUNE team have collectively expanded Rekichizu's cap
 
 Kato's dedication to the Rekichizu project quickly earned him significant industry honors. His achievements include receiving the [Enami Naomi Award (Newcomer Award) at Digital Content of the Year '23 / 29th AMD Award](https://amd.or.jp/pressrelease/2024/2024_0215_info.html) and the  ["Encouragement Award" at the 2024 Digital Archive Industry Awards](https://dapcon.jp/news/award_2024/).
 
-## Collaboration
+## Collaborations
 
 Since its release, Rekichizu has actively collaborated with outside institutions.
 
@@ -85,7 +85,7 @@ Since its release, Rekichizu has actively collaborated with outside institutions
 
 In 2025, in collaboration with the [ROIS-DS Center for Open Data in the Humanities](https://codh.rois.ac.jp/index.html.en), Rekichizu has created data for approximately 7,700 km of major roads from the Edo period. The dataset is available for download in GIS format. For details, please see [this page](https://codh.rois.ac.jp/historical-gis/edo-road/).
 
-In 2024, in collaboration with the [ROIS-DS Center for Open Data in the Humanities](https://codh.rois.ac.jp/index.html.en), Rekichizu extracted townhouse areas from all 29 sheets of 'Edo Kiriezu'. The data is published on Rekichizu (areas painted in light brown on the map). The dataset is available for download in GIS format. For details, please see [this page](https://codh.rois.ac.jp/edo-maps/rekichizu/).
+In 2024, in collaboration with the ROIS-DS Center for Open Data in the Humanities, Rekichizu extracted townhouse areas from all 29 sheets of 'Edo Kiriezu'. The data is published on Rekichizu (areas painted in light brown on the map). The dataset is available for download in GIS format. For details, please see [this page](https://codh.rois.ac.jp/edo-maps/rekichizu/).
 
 For those interested in the technical and academic details of this collaboration, a joint talk was delivered at [FOSS4G 2024 Japan](https://www.osgeo.jp/events/2024-2/foss4g-2024-japan/coreday): [『江戸ビッグデータのオープン化：「れきちず」を活用した歴史的地理情報基盤に向けて』](https://agora.ex.nii.ac.jp/~kitamoto/research/publications/foss4g24-ppt.pdf) _'Making Edo Big Data Open: Towards a Historical Geographic Information Platform Using "Rekichizu"' (in Japanese)_, by [Asanobu Kitamoto](https://agora.ex.nii.ac.jp/~kitamoto/index.html.en) (National Institute of Informatics) and Hajime Kato
 
