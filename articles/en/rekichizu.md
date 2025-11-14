@@ -1,7 +1,7 @@
 ---
 title: "Rekichizu: A Modern Take on Japan's Historical Maps"
 description: 'Rekichizu is a website where you can view historical maps with modern map design. Currently, maps from the late Edo period (around 1800-1840) are published and updated regularly.'
-date: 2025-11-13
+date: 2025-11-14
 category: [project]
 author: 'Sorami Shiromizu'
 thumbnail: '/images/articles/sorami-shiromizu/rekichizu/thumbnail.png'
