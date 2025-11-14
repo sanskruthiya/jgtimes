@@ -188,7 +188,7 @@ We realize that a lot of awesome historical data is often sitting isolated, crea
 
 ## Try It Out!
 
-We hope you will take the time to try Rekichizu yourself and enjoy comparing the past and present landscapes of Japan. We are constantly seeking ways to improve, so please feel free to [reach out with any feedback or suggestions you may have](https://rekichizu.jp/en#contact)!
+We hope you will take the time to try Rekichizu yourself and enjoy comparing the past and present landscapes of Japan. [Click here to start](https://rekichizu.jp/en)! We are constantly seeking ways to improve, so please feel free to [reach out with any feedback or suggestions you may have](https://rekichizu.jp/en#contact)!
 
 ## References
 
