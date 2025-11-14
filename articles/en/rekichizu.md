@@ -81,21 +81,27 @@ Kato's dedication to the Rekichizu project quickly earned him significant indust
 
 Since its release, Rekichizu has actively collaborated with outside institutions.
 
-![Collaborations with ROIS-DS Center for Open Data in the Humanities - Edo Major Roads Dataset and "Edo Kiriezu" Townhouse Area Dataset](/images/articles/sorami-shiromizu/rekichizu/collaboration-1.webp)
+### ROIS-DS Center for Open Data in the Humanities
+
+![Collaborations with the ROIS-DS Center for Open Data in the Humanities - Edo Major Roads Dataset and "Edo Kiriezu" Townhouse Area Dataset](/images/articles/sorami-shiromizu/rekichizu/collaboration-1.webp)
 
 In 2025, in collaboration with the [ROIS-DS Center for Open Data in the Humanities](https://codh.rois.ac.jp/index.html.en), Rekichizu has created data for approximately 7,700 km of major roads from the Edo period. The dataset is available for download in GIS format. For details, please see [this page](https://codh.rois.ac.jp/historical-gis/edo-road/).
 
 In 2024, in collaboration with the ROIS-DS Center for Open Data in the Humanities, Rekichizu extracted townhouse areas from all 29 sheets of 'Edo Kiriezu'. The data is published on Rekichizu (areas painted in light brown on the map). The dataset is available for download in GIS format. For details, please see [this page](https://codh.rois.ac.jp/edo-maps/rekichizu/).
 
-For those interested in the technical and academic details of this collaboration, a joint talk was delivered at [FOSS4G 2024 Japan](https://www.osgeo.jp/events/2024-2/foss4g-2024-japan/coreday): [『江戸ビッグデータのオープン化：「れきちず」を活用した歴史的地理情報基盤に向けて』](https://agora.ex.nii.ac.jp/~kitamoto/research/publications/foss4g24-ppt.pdf) _'Making Edo Big Data Open: Towards a Historical Geographic Information Platform Using "Rekichizu"' (in Japanese)_, by [Asanobu Kitamoto](https://agora.ex.nii.ac.jp/~kitamoto/index.html.en) (National Institute of Informatics) and Hajime Kato
+For those interested in the technical and academic details of this collaboration, a joint talk was delivered at [FOSS4G 2024 Japan](https://www.osgeo.jp/events/2024-2/foss4g-2024-japan/coreday): [『江戸ビッグデータのオープン化：「れきちず」を活用した歴史的地理情報基盤に向けて』](https://agora.ex.nii.ac.jp/~kitamoto/research/publications/foss4g24-ppt.pdf) _'Making Edo Big Data Open: Towards a Historical Geographic Information Platform Using "Rekichizu"' (in Japanese)_, by [Asanobu Kitamoto](https://agora.ex.nii.ac.jp/~kitamoto/index.html.en) (National Institute of Informatics) and Hajime Kato.
+
+### The novel "Sapporo Tanjo (The Birth of Sapporo)"
 
 !["Sapporo Tanjo" the novel, in a bookstore](/images/articles/sorami-shiromizu/rekichizu/collaboration-2.webp)
-
+!
 !["Sapporo Tanjo" special site - the map](/images/articles/sorami-shiromizu/rekichizu/collaboration-3.webp)
 
 In collaboration with a novel by Yoshinobu Kadoi, ["Sapporo Tanjo (The Birth of Sapporo)"](https://www.kawade.co.jp/np/isbn/9784309039480/) (published by [Kawade Shobo Shinsha](https://www.kawade.co.jp/np/index.html)), Rekichizu created maps of Sapporo from the late Edo period to the Showa era and a special website. For details, please see [this page](https://sapporo-tanjo.rekichizu.jp/).
 
 ## The Making of Rekichizu
+
+So, how exactly does a historical web map like Rekichizu get made? It takes a lot of effort across several areas. This section breaks down the dedication required for creating the core data, designing the unique map style, assembling the open-source software stack, and implementing all the internationalization features.
 
 ### The Data
 
@@ -139,9 +145,9 @@ For hosting, Rekichizu relies on [Cloudflare Workers](https://workers.cloudflare
 
 For those interested in the technical implementation details, several comprehensive articles and presentations (in Japanese) are available:
 
-- [現代風歴史マップ「れきちず」フロントエンドのウラとオモテ](https://speakerdeck.com/hjmkth/240824-frontendo-kato-iguchi) _'Front and Back of Modern-style Historical Map "Rekichizu"'_, presented at Frontend Conference Hokkaido 2024 by Hajime Kato and [Kanahiro Iguchi](https://spatialty.io/)
+- [現代風歴史マップ「れきちず」フロントエンドのウラとオモテ](https://speakerdeck.com/hjmkth/240824-frontendo-kato-iguchi) _'Front and Back of Modern-style Historical Map "Rekichizu"'_, presented at the [Frontend Conference Hokkaido 2024](https://www.frontend-conf.jp/2024) by Hajime Kato and [Kanahiro Iguchi](https://spatialty.io/)
 - [MapLibre GL JS を Svelte の世界で快適に使うためのライブラリを作りました](https://qiita.com/ciscorn/items/6f97f681f31cafe513bd) _"I created a library for comfortable use of MapLibre GL JS in the Svelte world"_ by Taku Fukada
-- [maplibre-gl-manual-geolocate: 任意の場所を「現在地」にするMapLibre GL JSライブラリ](https://zenn.dev/mierune/articles/a30cf312409119) _maplibre-gl-manual-geolocate: A MapLibre GL JS library to make any place "the current location"_ by Sorami Shiromizu
+- [maplibre-gl-manual-geolocate: 任意の場所を「現在地」にするMapLibre GL JSライブラリ](https://zenn.dev/mierune/articles/a30cf312409119) _'maplibre-gl-manual-geolocate: A MapLibre GL JS library to make any place "the current location"'_ by Sorami Shiromizu
 
 ### The Internationalization
 
