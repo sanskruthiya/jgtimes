@@ -23,23 +23,23 @@ _(Note: [The author](https://sorami.dev/) is a contributor to the Rekichizu proj
 
 ## Features
 
-![Rekichizu - Example map view](/images/articles/sorami-shiromizu/rekichizu/feature-1.png)
+![Rekichizu - Example map view](/images/articles/sorami-shiromizu/rekichizu/feature-1.webp)
 
 Rekichizu is built upon its own original large-scale, hand-crafted digital data meticulously derived from old maps. This data is presented with an original modern design map style, offering an interactive map service similar to the platforms you use daily.
 
 Users can search for locations in Japanese, Hiragana, or English. By clicking the magnifying glass icon in the upper-left, you can use the built-in simple geocoding service to search for place names.
 
-![Rekichizu - Example of 3D terrain](/images/articles/sorami-shiromizu/rekichizu/feature-2.png)
+![Rekichizu - Example of 3D terrain](/images/articles/sorami-shiromizu/rekichizu/feature-2.webp)
 
 You can view the terrain in 3D. Press the mountain button in the lower-right corner to render the map in three dimensions.
 
-![Rekichizu - Example of comparison mode (split)](/images/articles/sorami-shiromizu/rekichizu/feature-3.png)
+![Rekichizu - Example of comparison mode (split)](/images/articles/sorami-shiromizu/rekichizu/feature-3.webp)
 
-![Rekichizu - Example of comparison mode (scope)](/images/articles/sorami-shiromizu/rekichizu/feature-4.png)
+![Rekichizu - Example of comparison mode (scope)](/images/articles/sorami-shiromizu/rekichizu/feature-4.webp)
 
 You can compare the historical maps directly with modern maps and aerial photographs. Several comparison methods are available, including side-by-side (parallel/split) views, scope, and overlay. This capability is a powerful and fun tool for understanding how a location has changed over time.
 
-![Rekichizu - Example of GPS](/images/articles/sorami-shiromizu/rekichizu/feature-5.png)
+![Rekichizu - Example of GPS](/images/articles/sorami-shiromizu/rekichizu/feature-5.webp)
 
 Rekichizu is an ideal companion for exploring historical areas. By enabling the GPS feature, you can see at a glance what your current location was like during the Edo period, turning a simple walk into an engaging, time-traveling experience.
 
@@ -81,7 +81,7 @@ Kato's dedication to the Rekichizu project quickly earned him significant indust
 
 Since its release, Rekichizu has actively collaborated with outside institutions.
 
-![Collaborations with ROIS-DS Center for Open Data in the Humanities - Edo Major Roads Dataset and "Edo Kiriezu" Townhouse Area Dataset](/images/articles/sorami-shiromizu/rekichizu/collaboration-1.png)
+![Collaborations with ROIS-DS Center for Open Data in the Humanities - Edo Major Roads Dataset and "Edo Kiriezu" Townhouse Area Dataset](/images/articles/sorami-shiromizu/rekichizu/collaboration-1.webp)
 
 In 2025, in collaboration with the [ROIS-DS Center for Open Data in the Humanities](https://codh.rois.ac.jp/index.html.en), Rekichizu has created data for approximately 7,700 km of major roads from the Edo period. The dataset is available for download in GIS format. For details, please see [this page](https://codh.rois.ac.jp/historical-gis/edo-road/).
 
@@ -89,9 +89,9 @@ In 2024, in collaboration with the [ROIS-DS Center for Open Data in the Humaniti
 
 For those interested in the technical and academic details of this collaboration, a joint talk was delivered at [FOSS4G 2024 Japan](https://www.osgeo.jp/events/2024-2/foss4g-2024-japan/coreday): [『江戸ビッグデータのオープン化：「れきちず」を活用した歴史的地理情報基盤に向けて』](https://agora.ex.nii.ac.jp/~kitamoto/research/publications/foss4g24-ppt.pdf) _'Making Edo Big Data Open: Towards a Historical Geographic Information Platform Using "Rekichizu"' (in Japanese)_, by [Asanobu Kitamoto](https://agora.ex.nii.ac.jp/~kitamoto/index.html.en) (National Institute of Informatics) and Hajime Kato
 
-!["Sapporo Tanjo" the novel, in a bookstore](/images/articles/sorami-shiromizu/rekichizu/collaboration-2.png)
+!["Sapporo Tanjo" the novel, in a bookstore](/images/articles/sorami-shiromizu/rekichizu/collaboration-2.webp)
 
-!["Sapporo Tanjo" special site - the map](/images/articles/sorami-shiromizu/rekichizu/collaboration-3.png)
+!["Sapporo Tanjo" special site - the map](/images/articles/sorami-shiromizu/rekichizu/collaboration-3.webp)
 
 In collaboration with a novel by Yoshinobu Kadoi, ["Sapporo Tanjo (The Birth of Sapporo)"](https://www.kawade.co.jp/np/isbn/9784309039480/) (published by [Kawade Shobo Shinsha](https://www.kawade.co.jp/np/index.html)), Rekichizu created maps of Sapporo from the late Edo period to the Showa era and a special website. For details, please see [this page](https://sapporo-tanjo.rekichizu.jp/).
 
@@ -103,7 +103,7 @@ All data creation is conducted using QGIS, a free and open-source Geospatial Inf
 
 The core process involves digitally tracing and drawing historical information—such as roads, coastlines, and points of interest (POI)—by referencing old maps and other historical documents on top of the modern Geospatial Information Authority Map (地理院地図).
 
-![Visited libraries around Japan, and large amount of documents](/images/articles/sorami-shiromizu/rekichizu/making-1.png)
+![Visited libraries around Japan, and large amount of documents](/images/articles/sorami-shiromizu/rekichizu/making-1.webp)
 
 Since many of the necessary reference materials are not available in digital libraries, Kato has visited numerous libraries around Japan to collect physical documents.
 
@@ -113,15 +113,15 @@ Currently, Kato remains solely responsible for the ongoing data creation. Releas
 
 ### The Design
 
-![The example of Rekichizu map design](/images/articles/sorami-shiromizu/rekichizu/making-2.png)
+![The example of Rekichizu map design](/images/articles/sorami-shiromizu/rekichizu/making-2.webp)
 
 Rekichizu features a distinctive, original map design that aims to visually convey the historical atmosphere while maintaining modern readability. The design uses specific color and texture choices to evoke the period, notably by coloring the roads to suggest mossy stone pavements. Furthermore, the design helps to clearly distinguish between various historical land uses, such as commercial districts, temple and shrine grounds, samurai residences, and green spaces.
 
-![The original icons of Rekichizu](/images/articles/sorami-shiromizu/rekichizu/making-3.png)
+![The original icons of Rekichizu](/images/articles/sorami-shiromizu/rekichizu/making-3.webp)
 
 All icons representing points of interest are original creations, reflecting historical landmarks of the Edo period. These custom icons include designs for Barrier (関所), Post Town (宿場), Castles, Shops, Teahouses (茶屋), and Bridges.
 
-![The original OpenStreetMap design for Rekichizu](/images/articles/sorami-shiromizu/rekichizu/making-4.png)
+![The original OpenStreetMap design for Rekichizu](/images/articles/sorami-shiromizu/rekichizu/making-4.webp)
 
 Finally, to ensure a visually harmonious experience, the design of the integrated modern map, which utilizes [OpenStreetMap](https://openstreetmap.org/) (OSM) data, has been carefully styled to match the aesthetic and color palette of the original Rekichizu historical map.
 
@@ -166,23 +166,23 @@ As a final technical detail, the team originally used the [LINE Seed font](https
 
 The Rekichizu project is sustained by continuous development efforts. The team has various ideas for future expansions for both data and feature aspects.
 
-![Rekichizu future idea - POI information](/images/articles/sorami-shiromizu/rekichizu/future-1.png)
+![Rekichizu future idea - POI information](/images/articles/sorami-shiromizu/rekichizu/future-1.webp)
 
 The first major idea is the thorough development of Points of Interest (POI). This feature will allow users to click a location to access detailed information, which will include displaying associated images, such as historical Ukiyo-e (浮世絵), to vividly illustrate the site's past.
 
-![Rekichizu future idea - Route search](/images/articles/sorami-shiromizu/rekichizu/future-2.png)
+![Rekichizu future idea - Route search](/images/articles/sorami-shiromizu/rekichizu/future-2.webp)
 
 The team is also considering a historical route guidance feature (route search). While modern web maps focus on walking, this feature will integrate era-appropriate transportation methods, such as horseback, palanquin travel (駕籠), or messenger service (飛脚), providing a unique and practical taste of the history experience.
 
-![Rekichizu future idea - Data for different eras](/images/articles/sorami-shiromizu/rekichizu/future-3.png)
+![Rekichizu future idea - Data for different eras](/images/articles/sorami-shiromizu/rekichizu/future-3.webp)
 
 The project's long-term objective is to move beyond the current late Edo period to create a truly multi-layered historical map. The ultimate goal is to gradually include maps spanning a wider chronological range of Japanese history, such as the Heian (平安), Sengoku (戦国, Warring States), Meiji (明治), Taishō (大正), and Shōwa (昭和) periods.
 
-![Rekichizu future idea - More collaboration (image: Old Nakasendo streetscape)](/images/articles/sorami-shiromizu/rekichizu/future-4.png)
+![Rekichizu future idea - More collaboration (image: Old Nakasendo streetscape)](/images/articles/sorami-shiromizu/rekichizu/future-4.webp)
 
 As our previous partnerships have shown, we really value finding new people and organizations to work with. Rekichizu is always looking to collaborate further across different fields like education and tourism to expand its reach and usefulness. If you're interested in joining forces, we'd love to hear from you!
 
-![Rekichizu future idea - Data intergration concept](/images/articles/sorami-shiromizu/rekichizu/future-5.png)
+![Rekichizu future idea - Data intergration concept](/images/articles/sorami-shiromizu/rekichizu/future-5.webp)
 
 We realize that a lot of awesome historical data is often sitting isolated, created individually or by different groups. To unlock all that collective value, Rekichizu's big idea is to evolve into a platform for data integration and collaborative creation. We want to build a system that makes it easy to bring together existing data from individuals or organizations, empowering the entire community to collectively create and connect new historical geospatial information.
 
