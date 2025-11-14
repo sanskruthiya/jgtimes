@@ -21,7 +21,7 @@ See the [website](https://rekichizu.jp/en) for more information.
 
 _(Note: [The author](https://sorami.dev/) is a contributor to the Rekichizu project.)_
 
-## Features
+## What You Can Do
 
 ![Rekichizu - Example map view](/images/articles/sorami-shiromizu/rekichizu/feature-1.webp)
 
