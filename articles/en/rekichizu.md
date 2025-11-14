@@ -1,5 +1,5 @@
 ---
-title: 'Rekichizu: Modern Design History Map of Japan'
+title: "Rekichizu: A Modern Take on Japan's Historical Maps"
 description: 'Rekichizu is a website where you can view historical maps with modern map design. Currently, maps from the late Edo period (around 1800-1840) are published and updated regularly.'
 date: 2025-11-13
 category: [project]
@@ -139,7 +139,7 @@ For hosting, Rekichizu relies on [Cloudflare Workers](https://workers.cloudflare
 
 For those interested in the technical implementation details, several comprehensive articles and presentations (in Japanese) are available:
 
-- [現代風歴史マップ「れきちず」フロントエンドのウラとオモテ](https://speakerdeck.com/hjmkth/240824-frontendo-kato-iguchi) _'Front and Back of Modern-style History Map "Rekichizu"'_, presented at Frontend Conference Hokkaido 2024 by Hajime Kato and [Kanahiro Iguchi](https://spatialty.io/)
+- [現代風歴史マップ「れきちず」フロントエンドのウラとオモテ](https://speakerdeck.com/hjmkth/240824-frontendo-kato-iguchi) _'Front and Back of Modern-style Historical Map "Rekichizu"'_, presented at Frontend Conference Hokkaido 2024 by Hajime Kato and [Kanahiro Iguchi](https://spatialty.io/)
 - [MapLibre GL JS を Svelte の世界で快適に使うためのライブラリを作りました](https://qiita.com/ciscorn/items/6f97f681f31cafe513bd) _"I created a library for comfortable use of MapLibre GL JS in the Svelte world"_ by Taku Fukada
 - [maplibre-gl-manual-geolocate: 任意の場所を「現在地」にするMapLibre GL JSライブラリ](https://zenn.dev/mierune/articles/a30cf312409119) _maplibre-gl-manual-geolocate: A MapLibre GL JS library to make any place "the current location"_ by Sorami Shiromizu
 
@@ -151,7 +151,7 @@ The i18n feature for the web application itself is managed using the dedicated l
 
 For the map data, converting and translating the place names into these various locales required advanced techniques. Given the massive size of the data, the team leveraged Natural Language Processing (NLP) techniques, including a rule-based approach and an LLM ([OpenAI API](https://openai.com/api/)). This approach was highly effective for the semi-automated process, significantly reducing the manual correction effort required in the final step.
 
-More details on this technical process are available in the following article (in Japanese): [LLMを用いた地名のひらがな・英語化と、Paraglide JSによるi18n: モダンな歴史地図「れきちず」の事例](https://zenn.dev/mierune/articles/f7c446995e445f) _'English and Hiragana conversion of place names using LLM and i18n with Paraglide JS: The case of the modern history map "Rekichizu"'_ by Sorami Shiromizu.
+More details on this technical process are available in the following article (in Japanese): [LLMを用いた地名のひらがな・英語化と、Paraglide JSによるi18n: モダンな歴史地図「れきちず」の事例](https://zenn.dev/mierune/articles/f7c446995e445f) _'English and Hiragana conversion of place names using LLM and i18n with Paraglide JS: The case of the modern historical map "Rekichizu"'_ by Sorami Shiromizu.
 
 Styling the modern map (OSM) style in various locales required leveraging OSM's detailed tagging system:
 
