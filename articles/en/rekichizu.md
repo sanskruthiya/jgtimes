@@ -182,7 +182,7 @@ The project's long-term objective is to move beyond the current late Edo period 
 
 As our previous partnerships have shown, we really value finding new people and organizations to work with. Rekichizu is always looking to collaborate further across different fields like education and tourism to expand its reach and usefulness. If you're interested in joining forces, we'd love to hear from you!
 
-![Rekichizu future idea - Data intergration concept](/images/articles/sorami-shiromizu/rekichizu/future-4.png)
+![Rekichizu future idea - Data intergration concept](/images/articles/sorami-shiromizu/rekichizu/future-5.png)
 
 We realize that a lot of awesome historical data is often sitting isolated, created individually or by different groups. To unlock all that collective value, Rekichizu's big idea is to evolve into a platform for data integration and collaborative creation. We want to build a system that makes it easy to bring together existing data from individuals or organizations, empowering the entire community to collectively create and connect new historical geospatial information.
 
@@ -200,4 +200,3 @@ We hope you will take the time to try Rekichizu yourself and enjoy comparing the
 [^1]: MIERUNE was founded by the three organizers of [FOSS4G Hokkaido](https://foss4g.hokkaido.jp/). The company's team also includes multiple [Charter Members of the OSGeo Foundation](https://www.osgeo.org/about/charter-members/), and MIERUNE is an [organizational member of OSGeo.JP](https://www.osgeo.jp/sponsor). [Toru Mori](https://www.linkedin.com/in/toru-mori-9a4984b/), a board member of MIERUNE, is a key figure in supporting the global FOSS4G movement from its very inception, serving as the OSGeo Representative of the Japan Chapter from 2006 to 2018.
 [^2]: MIERUNE is an [official QGIS sponsor](https://qgis.org/#sustaining-members) since 2017 and a [voting member of the QGIS Country User Group](https://qgis.org/community/groups/).
 [^3]: MIERUNE is a major supporter of the MapLibre project, becoming the [world's first sponsor in 2022](https://maplibre.org/news/2022-06-10-mierune-announcement/) (alongside companies like Meta, Microsoft, and AWS). Furthermore, MIERUNE's commitment extends to project governance, as CEO [Yasunori Kirimoto](https://www.dayjournal.dev/) and CTO Kanahiro Iguchi are both [voting members of the project](https://github.com/maplibre/maplibre/blob/main/VOTING_MEMBERS.md).
-
