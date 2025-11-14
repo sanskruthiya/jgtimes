@@ -45,7 +45,7 @@ Rekichizu is an ideal companion for exploring historical areas. By enabling the 
 
 ## The History of Rekichizu
 
-Rekichizu originated as a personal passion project of graphic designer [Hajime Kato](https://chizutodesign.com/), widely known online as [@chizutodesign](https://x.com/chizutodesign). Kato is recognized for his creative and original approach to maps and data visualizations. He later has published a book, [『地図とか路線図とか@chizutodesign』]((https://books.ikaros.jp/book/b10080873.html)) (_"Maps and Route Maps," in Japanese_) by IKAROS Publications LTD., in 2023.
+Rekichizu originated as a personal passion project of graphic designer [Hajime Kato](https://chizutodesign.com/), widely known online as [@chizutodesign](https://x.com/chizutodesign). Kato is recognized for his creative and original approach to maps and data visualizations. He later published a book, [『地図とか路線図とか@chizutodesign』](https://books.ikaros.jp/book/b10080873.html) (_"Maps and Route Maps," in Japanese_) by IKAROS Publications LTD., in 2023.
 
 ### The Beginning: A Viral Edo-Style Map
 
@@ -59,7 +59,7 @@ _Figure: [地図とかデザインとか / chizutodesign - 江戸時代のGoogle
 
 ### Towards Web Map and Public Launch
 
-To transform this static image into the interactive web service seen today, Kato began a labor-intensive process of creating the digital data. He corrected and adjusted those data by referencing the Geospatial Information Authority Map ([地理院地図](https://maps.gsi.go.jp/)). Then actual drawing and data creation was perfomed using [QGIS](https://qgis.org/), a free and open-source geospatial information system (GIS) software.
+To transform this static image into the interactive web service seen today, Kato began a labor-intensive process of creating the digital data. He corrected and adjusted those data by referencing the Geospatial Information Authority Map ([地理院地図](https://maps.gsi.go.jp/)). Then actual drawing and data creation was performed using [QGIS](https://qgis.org/), a free and open-source geospatial information system (GIS) software.
 
 In August 2023, Kato released the initial public version of Rekichizu. The response was immediate and overwhelming, reaching 100,000 page views the very next day and gaining features in online media, national newspapers, and TV programs.
 
@@ -67,11 +67,11 @@ In August 2023, Kato released the initial public version of Rekichizu. The respo
 
 Despite the initial success, Kato, primarily a designer, faced challenges with the software engineering skills and resources needed to scale the service.
 
-Following the internal discussion, [MIERUNE Inc.](https://www.mierune.co.jp/), the geospatial professional firm where Kato is working, officially took over the project in May 2024. 
+Following internal discussions, [MIERUNE Inc.](https://www.mierune.co.jp/), the geospatial professional firm where Kato is working, officially took over the project in May 2024. 
 
-MIERUNE was a natural fit, as the company has a unique characteristic: it was born out of the FOSS4G (Free and Open Source Software for Geospatial) community and actively contributes to it [^1]. This foundation gives the firm familiarity with OSS (Open Source Software) and projects that aren't strictly for profit. Kato himself had joined MIERUNE in 2022 after being invited to present at one of the FOSS4G conferences.
+MIERUNE was a natural fit, as the company has unique characteristics: it was born out of the FOSS4G (Free and Open Source Software for Geospatial) community and actively contributes to it [^1]. This foundation gives the firm familiarity with OSS (Open Source Software) and projects that aren't strictly for profit. Kato himself had joined MIERUNE in 2022 after being invited to present at one of the FOSS4G conferences.
 
-Since then, Kato and the MIERUNE team has collectively expanded Rekichizu's capabilities, implementing key features such as generating the vector tiles for the map, implementing the geocoding, the comparison feature, internationalization (i18n), and much more. In November 2025, the English and Hiragana versions of the website were released, making these historical maps accessible to a wider international audience.
+Since then, Kato and the MIERUNE team have collectively expanded Rekichizu's capabilities, implementing key features such as generating the vector tiles for the map, implementing the geocoding, the comparison feature, internationalization (i18n), and much more. In November 2025, the English and Hiragana versions of the website were released, making these historical maps accessible to a wider international audience.
 
 ### Public Recognition
 
@@ -129,7 +129,7 @@ Finally, to ensure a visually harmonious experience, the design of the integrate
 
 The interactive web service leverages the professional expertise of the MIERUNE team.
 
-The core mapping engine is [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/), a powerful open-source web map library [^3]. The front-end web framework on choice is [Svelte](https://svelte.dev/), which MIERUNE has adopted company-wide as its default stack.
+The core mapping engine is [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/), a powerful open-source web map library [^3]. The front-end web framework of choice is [Svelte](https://svelte.dev/), which MIERUNE has adopted company-wide as its default stack.
 
 To build interactive maps efficiently within this environment, Rekichizu uses [Svelte MapLibre GL](https://svelte-maplibre-gl.mierune.dev/), an open-source library created by MIERUNE member [Taku Fukada](https://github.com/ciscorn). This library allows for the effortless creation of maps using Svelte's reactive capabilities. The map comparison features were specifically inspired by the [Side by Side example found in Svelte MapLibre GL](https://svelte-maplibre-gl.mierune.dev/examples/side-by-side), which itself was based on the original concept from [react-map-gl](https://visgl.github.io/react-map-gl/examples/maplibre/side-by-side).
 
