@@ -7,6 +7,37 @@
   @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
 }
 
+/* List styles */
+.markdown-body ul,
+.markdown-body ol {
+  @apply my-4 space-y-2 pl-6;
+}
+
+.markdown-body ul {
+  @apply list-disc;
+}
+
+.markdown-body ol {
+  @apply list-decimal;
+}
+
+.markdown-body li {
+  @apply leading-relaxed text-gray-900 dark:text-gray-200;
+}
+
+.markdown-body li > ul,
+.markdown-body li > ol {
+  @apply my-2;
+}
+
+.markdown-body ul ul {
+  @apply list-[circle];
+}
+
+.markdown-body ul ul ul {
+  @apply list-[square];
+}
+
 .dark .markdown-body {
   color-scheme: dark;
 }
@@ -65,7 +96,7 @@
 }
 
 /* Keep certain images unchanged */
-.dark img[src*="logo"], 
+.dark img[src*="logo"],
 .dark img[src*="profile"] {
   filter: none; /* Keep logos and profile images unchanged */
 }
