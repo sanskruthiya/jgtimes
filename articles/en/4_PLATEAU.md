@@ -19,7 +19,7 @@ It also offers services such as **PLATEAU VIEW (a viewer)**, a portal site, and 
 ![PLATEAU View Sample Image as of 2025/08/01](/images/articles/eita-h/PLATEAUVIEW.webp)
 PLATEAU View, accessed August 1, 2025 [^2]
 
-# Overview of Project PLATEAU
+# Overview
 This project, led by the Ministry of Land, Infrastructure, Transport and Tourism (MLIT), aims to develop and publish **high-precision 3D city models for cities** throughout Japan.
 A significant feature of this project is that it develops 3D data of urban building shapes, heights, and land use information with government-guaranteed quality, and makes much of this data available as open data with metadata, free of charge.
 
@@ -27,31 +27,43 @@ This open data is expected to accelerate the realization of **digital twins and 
 
 Since the project's launch in 2020, use cases by private companies, research institutions, and citizen developers have been increasing, and PLATEAU continues to grow as **a new foundation for geospatial information in Japan**.
 
-# PLATEAU's Concept
+# Concept
 The name PLATEAU is explained as: "3D city models provide countless connection points to society, and through these, various fields become interconnected and develop through cyberspace—the naming PLATEAU embodies the expectation for autonomous and resilient world development, similar to what Deleuze and Guattari anticipated in 'A Thousand Plateaus'". [^1] 
 This reflects its philosophical and ambitious meaning.
 
-The website and other materials feature sophisticated designs compared to traditional government agencies. This approach is believed to reflect the academic background of Yuya Uchiyama, a key person from MLIT who has led the PLATEAU project and has an unusual background in philosophy, as well as the strategy of Seiichi Saito, who was responsible for branding. [^4]
+The website and other materials feature sophisticated designs compared to traditional government agencies. This approach is believed to reflect the academic background of **Yuya Uchiyama, a key person from MLIT who has led the PLATEAU project** and has an unusual background in philosophy, as well as the strategy of **Seiichi Saito, who was responsible for branding**. [^4]
 
 Additionally, in 2017, the Japan Business Federation presented the **"Society 5.0"** related strategy, promoting the creation of a more futuristic and advanced "Virtual Japan" through public-private collaboration. [^5] [^12] 
 
 While there is no direct relationship between Society 5.0 and PLATEAU, the 3D city models of PLATEAU are expected to play a significant role in realizing this national strategy.
 
-# PLATEAU's Business Development Approach
+# Development Approach and Use Cases
 The core of Project PLATEAU is data, particularly **3D city model datasets**, which are being developed and released sequentially in **each of Japan's local governments**. 
 
 Since the project's launch in 2020, **the number of participating municipalities has increased year by year**, with a goal of publishing data for 500 cities by 2027. [^6]
 
 Furthermore, rather than limiting the use cases from PLATEAU's side, much is left to the discretion and ideas of users. Therefore, **various events are held to share use cases for data utilization**, enabling many people to understand and utilize the value of PLATEAU. [^7]
 
-# Characteristics of PLATEAU's 3D City Models
+Among practical applications, **solar power generation potential estimation and reflection simulation** using 3D building shapes demonstrates the real-world utility of PLATEAU data. [^16]
+
+![PLATEAU Usecase Sample Image as of 2025/08/01](/images/articles/eita-h/PLATEAU_usecase_uc.webp)
+PLATEAU use case: solar power generation potential estimation, accessed August 1, 2025 [^16]
+
+Beyond practical applications, PLATEAU also encourages creative exploration through competitions. Specific examples include the **PLATEAU AWARD** [^14], an annual contest where use cases in fields such as disaster prevention, healthcare, and AR/VR content are presented. 
+
+Additionally, the **PLATEAU Hack Challenge**, a hackathon, has seen many unique prototypes proposed, including simulations of Godzilla destroying cities. [^15]
+
+![PLATEAU Usecase Sample Image as of 2025/08/01](/images/articles/eita-h/PLATEAU_usecase_gz.webp)
+PLATEAU use case: Godzilla city destruction simulation, accessed August 1, 2025 [^15]
+
+# 3D City Models
 PLATEAU's 3D city models are being developed and published by municipalities in stages from **LOD0 to LOD2**. [^8]
 
 While 3D urban data may be available from other map vendors, one of PLATEAU's notable advantages appears to be the **high-precision quality and metadata guaranteed by the government**. Therefore, it is expected to be utilized in fields requiring public interest, such as **urban planning, disaster prevention, transportation, tourism, and architecture**.
 
 Additionally, while 3D city models might evoke images of processing with 3D modeling software like Blender, a significant feature of PLATEAU is that it can be handled as **GIS data**. While the original data supports various format types such as GeoJSON, it is primarily published in the OGC-compliant **CityGML format**, and open-source tools are provided to **convert PLATEAU's CityGML to common GIS data**. [^9] [^10]
 
-# Challenges for PLATEAU
+# Challenges
 The PLATEAU project, which began in 2020, has achieved certain successes, but currently faces many challenges.
 
 First, developing the data requires **a significant budget**. According to a leading Japanese surveying company, the development cost for a typical municipality with a population of 150,000 and an area of 200 km² is approximately JPY 23 million (roughly USD 140,000-160,000). [^13]
@@ -72,3 +84,6 @@ Additionally, a common challenge for all geospatial data is that once developed,
 [^11]: https://club.informatix.co.jp/?p=13629
 [^12]: https://www8.cao.go.jp/cstp/society5_0/
 [^13]: https://www.kkc.co.jp/service/lp/27544/
+[^14]: https://www.mlit.go.jp/plateau-next/award/#top
+[^15]: https://ascii.jp/elem/000/004/065/4065283/
+[^16]: https://www.mlit.go.jp/plateau/use-case/uc24-15/
