@@ -37,7 +37,7 @@
       "description": "The Geospatial Information Authority of Japan (GSI) is the national organization that conducts basic survey and mapping and instructs related organizations to clarify the conditions of land in Japan and that provides the results of surveys to help improve this land.",
       "category": ["organization"],
       "link": "https://www.gsi.go.jp/ENGLISH/index.html",
-      "image": "/resources/images/ImageComingSoon.webp"
+      "image": "/resources/images/card_GSI.webp"
     },
     {
       "title_jp": "OSGeo日本支部",
@@ -53,7 +53,7 @@
       "description": "Code for Japan is a non-profit organization that leverages technology to solve local issues. Inspired by the activities of the U.S. non-profit organization Code for America, it was launched around 2013 as a Japanese counterpart. It supports and operates projects that involve collaboration among government, businesses, and citizens, focusing on open data and civic participation.",
       "category": ["organization"],
       "link": "https://www.code4japan.org/en",
-      "image": "/resources/images/ImageComingSoon.webp"
+      "image": "/resources/images/card_CodeforJapan.webp"
     },
     {
       "title_jp": "Mini Tokyo 3D",
@@ -61,7 +61,7 @@
       "description": "Mini Tokyo 3D is a real-time 3D digital twin application that visualizes Tokyo's public transportation system. Developed by Akihiko Kusanagi, it displays the movements of trains, buses, and aircraft in Tokyo and surrounding areas with stunning 3D graphics. The application won the grand prize in the Tokyo Public Transportation Open Data Competition and supports multiple languages, making it accessible to international users.",
       "category": ["application", "digitaltwin", "opensource"],
       "link": "https://minitokyo3d.com/",
-      "image": "/resources/images/ImageComingSoon.webp"
+      "image": "/resources/images/card_miniTokyo3D.webp"
     },
     {
       "title_jp": "公共交通オープンデータセンター",
@@ -69,7 +69,7 @@
       "description": "The Public Transportation Open Data Center provides one-stop access to transportation data from operators participating in the Public Transportation Open Data Council. It supports comprehensive data from railway, bus, aviation, and passenger ship operators, including real-time information. The center delivers pre-processed data through REST APIs in standardized JSON format, with GTFS format also available for bus and passenger ship data.",
       "category": ["dataportal", "api", "government"],
       "link": "https://www.odpt.org/",
-      "image": "/resources/images/ImageComingSoon.webp"
+      "image": "/resources/images/card_ODPT.webp"
     },
     {
       "title_jp": "GTFS-JP",
@@ -77,7 +77,7 @@
       "description": "GTFS-JP is the Japanese implementation of the General Transit Feed Specification (GTFS), a standard format for public transportation schedules and geographic information. It enables developers to create applications using standardized public transportation data, supporting route planning, real-time updates, and transportation analysis across Japan.",
       "category": ["standard", "api"],
       "link": "https://www.gtfs.jp/",
-      "image": "/resources/images/ImageComingSoon.webp"
+      "image": "/resources/images/card_GTFSJP.webp"
     },
     {
       "title_jp": "ゼンリン",
@@ -85,6 +85,22 @@
       "description": "Zenrin is Japan's leading map provider company, known for its highly detailed and accurate mapping data. The company provides comprehensive geospatial information including road networks, building footprints, and address data that powers many navigation systems and location-based services in Japan.",
       "category": ["private", "mapprovider"],
       "link": "https://www.zenrin.co.jp/",
-      "image": "/resources/images/ImageComingSoon.webp"
+      "image": "/resources/images/card_Zenrin.webp"
+    },
+    {
+      "title_jp": "れきちず",
+      "title_en": "Rekichizu",
+      "description": "Rekichizu is a website where you can view historical maps with modern map design. Currently featuring maps from the late Edo period (around 1800-1840), the project provides interactive historical mapping with multilingual support and open data availability under CC BY-NC-ND 4.0 license.",
+      "category": ["project", "application", "opensource"],
+      "link": "https://rekichizu.jp/en",
+      "image": "/resources/images/card_Rekichizu.webp"
+    },
+    {
+      "title_jp": "MIERUNE",
+      "title_en": "MIERUNE",
+      "description": "MIERUNE is a GIS service company established through Japan's FOSS4G events, specializing in location-based system development and consulting. The company is also recognized as an official supporter of QGIS, contributing to the open source GIS ecosystem in Japan.",
+      "category": ["private", "gis", "opensource"],
+      "link": "https://www.mierune.co.jp/",
+      "image": "/resources/images/card_MIERUNE.webp"
     }
 ]
