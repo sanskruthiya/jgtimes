@@ -58,6 +58,10 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">公共交通オープンデータセンター</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Public Transportation Open Data Center</td>
           </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">OSGeo日本支部</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">OSGeo Japan</td>
+          </tr>
         </tbody>
       </table>
     </div>
