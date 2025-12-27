@@ -1,6 +1,6 @@
 ---
-title: "Japan's FOSS4G Community: Brief introduction of OSGeo Japan & OpenStreetMap Japan"
-description: "Japan's FOSS4G Community: Brief introduction of OSGeo Japan & OpenStreetMap Japan"
+title: "Japan's FOSS4G Community: An Introduction to OSGeo Japan & OpenStreetMap Japan"
+description: "Japan's FOSS4G Community: An Introduction to OSGeo Japan & OpenStreetMap Japan"
 date: 2025-12-26
 category: "organization"
 author: "Eita.H"
