@@ -1,12 +1,14 @@
-<script>
+<script lang="ts">
     import { Fa } from 'svelte-fa'
     import { faStar } from '@fortawesome/free-solid-svg-icons'
     import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-    export let resource;
+    import type { ResourceInfo } from '$lib/getResources';
     
-    let isExpanded = false;
-    let descriptionHeight = 0;
-    let descriptionElement;
+    export let resource: ResourceInfo;
+    
+    let isExpanded: boolean = false;
+    let descriptionHeight: number = 0;
+    let descriptionElement: HTMLElement;
 
     $: rotateClass = isExpanded ? 'rotate-180' : 'rotate-0';
 </script>
@@ -16,7 +18,7 @@
       <img 
         class="w-full h-auto max-h-60 object-contain transition-transform duration-200 group-hover:scale-105" 
         src={resource.image} 
-        alt={resource.title} 
+        alt={resource.title_en} 
       />
     </a>
     <div class="p-4 flex flex-col justify-between flex-grow border-t border-gray-100 dark:border-gray-700 mt-4">
@@ -59,6 +61,15 @@
             <div class="flex text-sm flex-wrap">
                 {#each resource.category as category, i}
                   <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full mr-2 mb-2">{category}</span>
+                {/each}
+                {#each resource.languages as language, i}
+                  <span class="px-2 py-1 bg-green-200 text-green-800 rounded-full mr-2 mb-2 font-medium">
+                    {#if language === 'ja' && resource.languages.length === 1}🇯🇵 JP only
+                    {:else if language === 'ja'}🇯🇵 JP
+                    {:else if language === 'en'}🇺🇸 EN
+                    {:else}{language}
+                    {/if}
+                  </span>
                 {/each}
             </div>
           </div>

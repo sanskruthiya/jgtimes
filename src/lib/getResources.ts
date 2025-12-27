@@ -1,11 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 
-interface ResourceInfo {
+export interface ResourceInfo {
   title_jp: string;
   title_en: string;
   description: string;
   category: string[];
+  languages: string[];
   link: string;
   image: string;
 }
