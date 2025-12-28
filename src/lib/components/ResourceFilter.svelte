@@ -6,6 +6,8 @@
     export let selectedCategories: string[] = [];
     export let selectedLanguages: string[] = [];
 
+    let isFilterOpen: boolean = false;
+
     // Extract unique categories and languages from resources
     $: allCategories = [...new Set(resources.flatMap((r: ResourceInfo) => r.category))].sort();
     $: allLanguages = [...new Set(resources.flatMap((r: ResourceInfo) => r.languages))].sort();
@@ -20,6 +22,8 @@
             return categoryMatch && languageMatch;
         });
     }
+
+    $: hasActiveFilters = selectedCategories.length > 0 || selectedLanguages.length > 0;
 
     function toggleCategory(category: string): void {
         if (selectedCategories.includes(category)) {
@@ -41,57 +45,118 @@
         selectedCategories = [];
         selectedLanguages = [];
     }
+
+    function toggleFilter(): void {
+        isFilterOpen = !isFilterOpen;
+    }
 </script>
 
-<div class="mb-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-    <div class="flex flex-wrap items-center gap-4 mb-4">
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Filter Resources</h3>
-        <button 
-            on:click={clearFilters}
-            class="px-3 py-1 text-sm bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
-        >
-            Clear All
-        </button>
-        <span class="text-sm text-gray-600 dark:text-gray-400">
-            Showing {filteredResources.length} of {resources.length} resources
-        </span>
-    </div>
-
-    <div class="space-y-4">
-        <!-- Category Filters -->
-        <div>
-            <h4 class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Categories</h4>
-            <div class="flex flex-wrap gap-2">
-                {#each allCategories as category}
-                    <button
-                        on:click={() => toggleCategory(category)}
-                        class="px-3 py-1 text-sm rounded-full transition-colors {selectedCategories.includes(category) 
-                            ? 'bg-blue-500 text-white' 
-                            : 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 hover:bg-blue-200 dark:hover:bg-blue-800'}"
-                    >
-                        {category}
-                    </button>
-                {/each}
+<!-- Filter Toggle Button -->
+<div class="mb-6">
+    <button
+        on:click={toggleFilter}
+        class="w-full p-4 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
+               rounded-lg shadow-sm hover:shadow-md hover:bg-gray-100 dark:hover:bg-gray-700
+               transition-all duration-200 {hasActiveFilters ? 'border-blue-300 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/20' : ''}"
+    >
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-600">
+                    <svg class="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.207A1 1 0 013 6.5V4z" />
+                    </svg>
+                </div>
+                <div class="text-left">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                        Filter Resources
+                        {#if hasActiveFilters}
+                            <span class="ml-2 px-2 py-1 text-xs bg-blue-600 text-white rounded-full">
+                                {selectedCategories.length + selectedLanguages.length}
+                            </span>
+                        {/if}
+                    </h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Showing {filteredResources.length} of {resources.length} resources
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                {#if hasActiveFilters}
+                    <span class="px-2 py-1 text-xs bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">
+                        {selectedCategories.length + selectedLanguages.length} active
+                    </span>
+                {/if}
+                <svg 
+                    class="w-5 h-5 text-gray-500 transition-transform duration-200 {isFilterOpen ? 'rotate-180' : ''}"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
             </div>
         </div>
+    </button>
 
-        <!-- Language Filters -->
-        <div>
-            <h4 class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Languages</h4>
-            <div class="flex flex-wrap gap-2">
-                {#each allLanguages as language}
-                    <button
-                        on:click={() => toggleLanguage(language)}
-                        class="px-3 py-1 text-sm rounded-full transition-colors {selectedLanguages.includes(language) 
-                            ? 'bg-green-500 text-white' 
-                            : 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 hover:bg-green-200 dark:hover:bg-green-800'}"
+    <!-- Filter Content -->
+    <div class="overflow-hidden transition-all duration-300 ease-in-out {isFilterOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}">
+        <div class="mt-4 p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+            <!-- Clear All Button -->
+            {#if hasActiveFilters}
+                <div class="flex justify-end mb-4">
+                    <button 
+                        on:click={clearFilters}
+                        class="px-4 py-2 text-sm bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 
+                               rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 
+                               border border-gray-300 dark:border-gray-600"
                     >
-                        {#if language === 'ja'}🇯🇵 JP
-                        {:else if language === 'en'}🇺🇸 EN
-                        {:else}{language}
-                        {/if}
+                        ✕ Clear All Filters
                     </button>
-                {/each}
+                </div>
+            {/if}
+            <div class="space-y-6">
+                <!-- Category Filters -->
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+                        <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300">Categories</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        {#each allCategories as category}
+                            <button
+                                on:click={() => toggleCategory(category)}
+                                class="px-3 py-2 text-sm rounded-lg transition-colors duration-200 border
+                                       {selectedCategories.includes(category) 
+                                        ? 'bg-blue-600 dark:bg-blue-600 text-white border-blue-600 dark:border-blue-600' 
+                                        : 'bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600'}"
+                            >
+                                {category}
+                            </button>
+                        {/each}
+                    </div>
+                </div>
+
+                <!-- Language Filters -->
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
+                        <h4 class="text-sm font-semibold text-gray-700 dark:text-gray-300">Languages</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        {#each allLanguages as language}
+                            <button
+                                on:click={() => toggleLanguage(language)}
+                                class="px-3 py-2 text-sm rounded-lg transition-colors duration-200 border
+                                       {selectedLanguages.includes(language) 
+                                        ? 'bg-blue-600 dark:bg-blue-600 text-white border-blue-600 dark:border-blue-600' 
+                                        : 'bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600'}"
+                            >
+                                {#if language === 'ja'}🇯🇵 JP
+                                {:else if language === 'en'}🇺🇸 EN
+                                {:else}{language}
+                                {/if}
+                            </button>
+                        {/each}
+                    </div>
+                </div>
             </div>
         </div>
     </div>

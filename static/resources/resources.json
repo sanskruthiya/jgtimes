@@ -4,7 +4,7 @@
       "title_en": "G Spatial Information Center",
       "description": "The G Spatial Information Center, managed by Japan's Geospatial Information Authority (GSI), serves as a hub for accessing and sharing geospatial data from various public and private sources. It provides datasets such as satellite imagery, topographic maps, and 3D city models, supporting applications in urban planning, disaster management, and research. The platform promotes open data use and collaboration in the geospatial field.",
       "category": ["dataportal", "government"],
-      "languages": ["ja"],
+      "languages": ["en", "ja"],
       "link": "https://front.geospatial.jp/",
       "image": "/resources/images/GSIcenter.webp"
     },
@@ -21,7 +21,7 @@
       "title_jp": "PLATEAU",
       "title_en": "Project PLATEAU Official Website",
       "description": "Project PLATEAU, led by Japan's Ministry of Land, Infrastructure, Transport and Tourism (MLIT), is a national initiative to develop and provide open 3D urban models of cities across Japan. The project promotes the use of 3D geospatial data in urban planning, disaster prevention, and smart city development. The datasets are available in CityGML format and can be visualized using platforms like Cesium and Unity, enabling diverse applications in research and industry.",
-      "category": ["project", "government"],
+      "category": ["opendata", "government"],
       "languages": ["ja"],
       "link": "https://www.mlit.go.jp/plateau/",
       "image": "/resources/images/PLATEAU.webp"
@@ -30,7 +30,7 @@
       "title_jp": "準天頂衛星みちびき",
       "title_en": "QZSS Michibiki Official Website",
       "description": "The Quasi-Zenith Satellite System (QZSS), known as 'Michibiki' in Japanese, is Japan's regional satellite navigation system that enhances GPS signals in the Asia-Oceania region. Developed by the Japanese government, it provides highly precise positioning information with centimeter-level accuracy, supporting applications in autonomous vehicles, precision agriculture, and disaster management. The system consists of multiple satellites in quasi-zenith orbits, ensuring stable coverage even in urban canyons and mountainous areas where GPS signals may be obstructed.",
-      "category": ["project", "infrastructure", "government"],
+      "category": ["infrastructure", "government"],
       "languages": ["ja", "en"],
       "link": "https://qzss.go.jp/",
       "image": "/resources/images/QZSS.webp"
@@ -39,16 +39,16 @@
       "title_jp": "国土地理院",
       "title_en": "Geospatial Information Authority of Japan",
       "description": "The Geospatial Information Authority of Japan (GSI) is the national organization that conducts basic survey and mapping and instructs related organizations to clarify the conditions of land in Japan and that provides the results of surveys to help improve this land.",
-      "category": ["organization"],
+      "category": ["organization", "government"],
       "languages": ["ja", "en"],
-      "link": "https://www.gsi.go.jp/ENGLISH/index.html",
+      "link": "https://www.gsi.go.jp/top.html",
       "image": "/resources/images/card_GSI.webp"
     },
     {
       "title_jp": "OSGeo日本支部",
       "title_en": "OSGeo Japan",
       "description": "OSGeo Japan is the official Japanese chapter of the Open Source Geospatial Foundation (OSGeo), which was established to support and build high-quality open source geospatial software. The foundation aims to promote community-driven use and development of open source projects. OSGeo Japan organizes conferences, workshops, and educational activities to advance FOSS4G (Free and Open Source Software for Geospatial) technologies in Japan.",
-      "category": ["organization"],
+      "category": ["organization", "opensource"],
       "languages": ["ja"],
       "link": "https://www.osgeo.jp/",
       "image": "/resources/images/OSGeoJapan.webp"
@@ -57,9 +57,9 @@
       "title_jp": "Code for Japan",
       "title_en": "Code for Japan",
       "description": "Code for Japan is a non-profit organization that leverages technology to solve local issues. Inspired by the activities of the U.S. non-profit organization Code for America, it was launched around 2013 as a Japanese counterpart. It supports and operates projects that involve collaboration among government, businesses, and citizens, focusing on open data and civic participation.",
-      "category": ["organization"],
+      "category": ["organization", "opensource"],
       "languages": ["ja", "en"],
-      "link": "https://www.code4japan.org/en",
+      "link": "https://www.code4japan.org/",
       "image": "/resources/images/card_CodeforJapan.webp"
     },
     {
@@ -75,7 +75,7 @@
       "title_jp": "公共交通オープンデータセンター",
       "title_en": "Public Transportation Open Data Center",
       "description": "The Public Transportation Open Data Center provides one-stop access to transportation data from operators participating in the Public Transportation Open Data Council. It supports comprehensive data from railway, bus, aviation, and passenger ship operators, including real-time information. The center delivers pre-processed data through REST APIs in standardized JSON format, with GTFS format also available for bus and passenger ship data.",
-      "category": ["dataportal", "api", "government"],
+      "category": ["organization", "opendata"],
       "languages": ["ja", "en"],
       "link": "https://www.odpt.org/",
       "image": "/resources/images/card_ODPT.webp"
@@ -84,7 +84,7 @@
       "title_jp": "GTFS-JP",
       "title_en": "GTFS Japan",
       "description": "GTFS-JP is the Japanese implementation of the General Transit Feed Specification (GTFS), a standard format for public transportation schedules and geographic information. It enables developers to create applications using standardized public transportation data, supporting route planning, real-time updates, and transportation analysis across Japan.",
-      "category": ["standard", "api"],
+      "category": ["standard", "opendata"],
       "languages": ["ja"],
       "link": "https://www.gtfs.jp/",
       "image": "/resources/images/card_GTFSJP.webp"
@@ -94,7 +94,7 @@
       "title_en": "Zenrin",
       "description": "Zenrin is Japan's leading map provider company, known for its highly detailed and accurate mapping data. The company provides comprehensive geospatial information including road networks, building footprints, and address data that powers many navigation systems and location-based services in Japan.",
       "category": ["private", "mapprovider"],
-      "languages": ["ja"],
+      "languages": ["en", "ja"],
       "link": "https://www.zenrin.co.jp/",
       "image": "/resources/images/card_Zenrin.webp"
     },
@@ -102,7 +102,7 @@
       "title_jp": "れきちず",
       "title_en": "Rekichizu",
       "description": "Rekichizu is a website where you can view historical maps with modern map design. Currently featuring maps from the late Edo period (around 1800-1840), the project provides interactive historical mapping with multilingual support and open data availability under CC BY-NC-ND 4.0 license.",
-      "category": ["project", "application", "opensource"],
+      "category": ["application", "opensource"],
       "languages": ["ja", "en"],
       "link": "https://rekichizu.jp/en",
       "image": "/resources/images/card_Rekichizu.webp"
@@ -111,7 +111,7 @@
       "title_jp": "MIERUNE",
       "title_en": "MIERUNE",
       "description": "MIERUNE is a GIS service company established through Japan's FOSS4G events, specializing in location-based system development and consulting. The company is also recognized as an official supporter of QGIS, contributing to the open source GIS ecosystem in Japan.",
-      "category": ["private", "gis", "opensource"],
+      "category": ["private", "opensource"],
       "languages": ["ja"],
       "link": "https://www.mierune.co.jp/",
       "image": "/resources/images/card_MIERUNE.webp"
