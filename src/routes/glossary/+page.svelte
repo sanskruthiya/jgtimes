@@ -193,6 +193,18 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">国土地理院最適化ベクトルタイル</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GSI-optimized vector tiles</td>
           </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">（測量）基準点</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Control Points</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">地番図</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">National Lot Number Map</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">登記所備付地図</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Land Registry Map</td>
+          </tr>
         </tbody>
       </table>
     </div>

@@ -115,5 +115,14 @@
       "languages": ["ja"],
       "link": "https://www.mierune.co.jp/",
       "image": "/resources/images/card_MIERUNE.webp"
+    },
+    {
+      "title_jp": "open-hinata3(ひなたGIS)",
+      "title_en": "open-hinata3",
+      "description": "open-hinata3 (OH3) is an ultra-general-purpose open-source web GIS developed by a solo developer in Japan. It features over 625 types of data layers covering diverse open data and statistics and AI agent functionality for interactive geographic analysis. Originally adopted by Miyazaki Prefecture as an official web service, OH3 continues to evolve with innovative features that make data familiar to everyone.",
+      "category": ["application", "opensource"],
+      "languages": ["ja"],
+      "link": "https://kenzkenz.jp/oh3/",
+      "image": "/resources/images/card_OH3.webp"
     }
 ]
