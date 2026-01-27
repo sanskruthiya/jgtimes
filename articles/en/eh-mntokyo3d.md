@@ -83,12 +83,12 @@ This can be described as an **urban understanding promotion tool** that visualiz
 # Key Learnings from This Case
 The development of Mini Tokyo 3D can be said to be one of **the successful examples of Japan's open data policy bearing fruit**.
 
-This app was born from a public competition to promote the utilization of open data and grew into a globally recognized achievement by an individual developer.
+This app was born from a public competition to promote the utilization of open data and grew into a globally recognized achievement by a solo developer.
 This is a symbolic case showing that **publishing data can elicit creative individual participation**.
 
 The following four points are particularly noteworthy:
 
-1. **🤝 Compatibility between open data and individual development**  
+1. **🤝 Compatibility between open data and a solo development project**  
    This achievement demonstrates that individuals can freely reconstruct data provided by governments and local authorities to create social value.
 
 2. **💡 Interest-driven development process**  

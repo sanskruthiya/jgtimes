@@ -1,7 +1,7 @@
 ---
 title: "Use Case — Hinata GIS and open-hinata3: A Japan's Ultra-General-Purpose Open-Source GIS in Practice"
 description: "Use Case — Hinata GIS and open-hinata3: A Japan's Ultra-General-Purpose Open-Source GIS in Practice"
-date: 2026-01-30
+date: 2026-01-27
 category: [usecase, opensource]
 author: "Eita.H"
 ---
