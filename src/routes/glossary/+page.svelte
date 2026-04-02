@@ -132,6 +132,18 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">電子国土ウェブマッピングシステム</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Digital National Land Web Mapping System</td>
           </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">東京都デジタルツイン実現プロジェクト</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Tokyo Digital Twin Realization Project</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">オープンながさき</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Open Nagasaki</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">しずおか自動運転Show CASEプロジェクト</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Shizuoka Autonomous Driving Show CASE Project</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -156,6 +168,26 @@
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">デジタルツイン</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Digital Twin</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">点群データ</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Point Cloud Data</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">航空レーザ測量</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Airborne Laser Scanning</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">航空レーザ測深</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Airborne Laser Bathymetry</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">移動車両計測</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Mobile Mapping System</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">高精度3次元地図（HDマップ）</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">High-Definition 3D Maps (HD Maps)</td>
           </tr>
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GTFS</td>
@@ -229,6 +261,10 @@
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">東日本大震災</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Great East Japan Earthquake</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">大阪・関西万博2025</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Osaka-Kansai Expo 2025</td>
           </tr>
         </tbody>
       </table>

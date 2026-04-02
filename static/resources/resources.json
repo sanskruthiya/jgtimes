@@ -93,7 +93,7 @@
       "title_jp": "ゼンリン",
       "title_en": "Zenrin",
       "description": "Zenrin is Japan's leading map provider company, known for its highly detailed and accurate mapping data. The company provides comprehensive geospatial information including road networks, building footprints, and address data that powers many navigation systems and location-based services in Japan.",
-      "category": ["private", "mapprovider"],
+      "category": ["company", "mapprovider"],
       "languages": ["en", "ja"],
       "link": "https://www.zenrin.co.jp/",
       "image": "/resources/images/card_Zenrin.webp"
@@ -111,7 +111,7 @@
       "title_jp": "MIERUNE",
       "title_en": "MIERUNE",
       "description": "MIERUNE is a GIS service company established through Japan's FOSS4G events, specializing in location-based system development and consulting. The company is also recognized as an official supporter of QGIS, contributing to the open source GIS ecosystem in Japan.",
-      "category": ["private", "opensource"],
+      "category": ["company", "opensource"],
       "languages": ["ja"],
       "link": "https://www.mierune.co.jp/",
       "image": "/resources/images/card_MIERUNE.webp"
@@ -124,5 +124,32 @@
       "languages": ["ja"],
       "link": "https://kenzkenz.jp/oh3/",
       "image": "/resources/images/card_OH3.webp"
+    },
+    {
+      "title_jp": "Virtual Shizuoka",
+      "title_en": "Virtual Shizuoka",
+      "description": "Virtual Shizuoka is a pioneering point cloud data initiative by Shizuoka Prefecture's Construction Policy Division. Since 2019, the prefecture has developed high-density point cloud data covering the entire 7,777 km² area with over 500 billion data points, published under CC-BY 4.0 license on G-Spatial Information Center.",
+      "category": ["opendata", "government", "digitaltwin"],
+      "languages": ["ja"],
+      "link": "https://virtualshizuokaproject.my.canva.site/",
+      "image": "/resources/images/card_VirtualShizuoka.webp"
+    },
+    {
+      "title_jp": "東京都デジタルツイン実現プロジェクト",
+      "title_en": "Tokyo Digital Twin Realization Project",
+      "description": "Tokyo Digital Twin Realization Project, launched in 2020 by Tokyo Metropolitan Government, aims to create a comprehensive digital twin of Japan's capital. The project includes point cloud data development with equipment lending programs, data acquisition support, and web-based viewer collaboration.",
+      "category": ["opendata", "government", "digitaltwin"],
+      "languages": ["en", "ja"],
+      "link": "https://info.tokyo-digitaltwin.metro.tokyo.lg.jp/",
+      "image": "/resources/images/card_TokyoDigitalTwin.webp"
+    },
+    {
+      "title_jp": "オープンナガサキ",
+      "title_en": "Open Nagasaki",
+      "description": "Open Nagasaki is a point cloud open data initiative by Nagasaki Prefecture, known for its unique catchphrase 'Use it freely' in an imperative tone. Launched around 2023, the project distributes point cloud data in LAS format and emphasizes collaboration with regional researchers and communities.",
+      "category": ["opendata", "government"],
+      "languages": ["ja"],
+      "link": "https://opennagasaki.nerc.or.jp/",
+      "image": "/resources/images/card_OpenNagasaki.webp"
     }
 ]

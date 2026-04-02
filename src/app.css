@@ -104,3 +104,8 @@
 .dark img[src*="profile"] {
   filter: none; /* Keep logos and profile images unchanged */
 }
+
+/* Footnote list: override github-markdown-css padding to prevent 2-digit numbers from being clipped */
+.markdown-body .footnotes ol {
+  padding-left: 2.5em;
+}
