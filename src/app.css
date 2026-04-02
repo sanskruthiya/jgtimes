@@ -107,5 +107,5 @@
 
 /* Footnote list: override github-markdown-css padding to prevent 2-digit numbers from being clipped */
 .markdown-body .footnotes ol {
-  padding-left: 2.5em;
+  padding-left: 3em;
 }

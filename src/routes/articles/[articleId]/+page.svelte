@@ -24,7 +24,7 @@
 <div class="pb-12 px-0 md:pt-3 md:px-6 flex flex-col items-center" in:fade="{{ duration: 600, delay: 0 }}">
     <!--
     <div>
-      <img　class="h-96 w-full object-cover rounded-lg"　src={`/thumbnails/${data.metadata?.thumbnail}`}/>
+      <img class="h-96 w-full object-cover rounded-lg" src={`/thumbnails/${data.metadata?.thumbnail}`}/>
     </div>
     -->
     <h1 class="text-3xl font-semibold mt-8">{data.metadata?.title || 'Untitled'}</h1>

@@ -18,7 +18,7 @@ Point cloud data consists of massive collections of three-dimensional points acq
 This article introduces representative point cloud data publication projects in Japan and examines their characteristics and future potential.
 
 ![Virtual Shizuoka screenshot as of 2026/3/30](/images/articles/eita-h/eh_pointcloud_image01.webp)
-Virtual Shizuoka viewed on Tokyo Digital Twin Realization Project viewer, accessed March 30, 2026 [^2]
+Virtual Shizuoka viewed on Tokyo Digital Twin Project viewer, accessed March 30, 2026 [^2]
 
 # Case Study: Virtual Shizuoka
 One of the pioneering initiatives in point cloud data publication in Japan is the **"Virtual Shizuoka"** project by the Construction Policy Division of Shizuoka Prefecture, located in central Japan.
@@ -56,8 +56,8 @@ Point cloud data acquisition combines three types of approaches, each with diffe
 ![Virtual Shizuoka three data types sample as of 2026/3/30](/images/articles/eita-h/eh_pointcloud_image03.webp)
 Virtual Shizuoka, accessed March 30, 2026 [^6]
 
-## Main Applications [^3]
-Virtual Shizuoka's applications include the following:
+## Main Applications
+Virtual Shizuoka's applications include the following: [^3]
 
 - **Disaster Prevention**: Analysis of change volumes before and after disaster events
 - **Transportation**: Map development for autonomous vehicle navigation
@@ -78,14 +78,14 @@ Application to autonomous driving is also anticipated. Specifically, Virtual Shi
 
 As of 2026, many point cloud data development projects are underway in Japan in addition to **Virtual Shizuoka**.
 
-## Tokyo Digital Twin Realization Project
-Tokyo, Japan's capital, launched its **"Digital Twin Realization Project"** in 2020, with point cloud data development beginning in 2022 as a key component of this initiative.[^8] [^9] [^10]
+## Tokyo Digital Twin Project
+Tokyo, Japan's capital, launched its **"Digital Twin Project"** in 2020, with point cloud data development beginning in 2022 as a key component of this initiative.[^8] [^9] [^10]
 
 The point cloud data development includes equipment lending, data acquisition, and utilization support.
 
 Challenges include difficulties in positioning in certain locations and difficulties in reproducing the texture of cultural properties in viewers.[^9]
 
-![Tokyo Digital Twin Realization Project as of 2026/3/30](/images/articles/eita-h/eh_pointcloud_image04.webp)
+![Tokyo Digital Twin Project as of 2026/3/30](/images/articles/eita-h/eh_pointcloud_image04.webp)
 Tokyo Digital Twin Project, accessed March 30, 2026 [^9]
 
 ## Open Nagasaki

@@ -134,7 +134,7 @@
           </tr>
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">東京都デジタルツイン実現プロジェクト</td>
-            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Tokyo Digital Twin Realization Project</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Tokyo Digital Twin Project</td>
           </tr>
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">オープンながさき</td>

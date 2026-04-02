@@ -136,8 +136,8 @@
     },
     {
       "title_jp": "東京都デジタルツイン実現プロジェクト",
-      "title_en": "Tokyo Digital Twin Realization Project",
-      "description": "Tokyo Digital Twin Realization Project, launched in 2020 by Tokyo Metropolitan Government, aims to create a comprehensive digital twin of Japan's capital. The project includes point cloud data development with equipment lending programs, data acquisition support, and web-based viewer collaboration.",
+      "title_en": "Tokyo Digital Twin Project",
+      "description": "Tokyo Digital Twin Project, launched in 2020 by Tokyo Metropolitan Government, aims to create a comprehensive digital twin of Japan's capital. The project includes point cloud data development with equipment lending programs, data acquisition support, and web-based viewer collaboration.",
       "category": ["opendata", "government", "digitaltwin"],
       "languages": ["en", "ja"],
       "link": "https://info.tokyo-digitaltwin.metro.tokyo.lg.jp/",
