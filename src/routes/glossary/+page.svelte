@@ -39,6 +39,10 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Cabinet Office</td>
           </tr>
           <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">内閣官房</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Cabinet Secretariat</td>
+          </tr>
+          <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">一般社団法人 社会基盤情報流通推進協議会(AIGID)</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Association for Promotion of Infrastructure Geospatial Information Distribution</td>
           </tr>
@@ -144,6 +148,14 @@
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">しずおか自動運転Show CASEプロジェクト</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Shizuoka Autonomous Driving Show CASE Project</td>
           </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">ジオAI研究会</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">GeoAI Study Group</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">不動産情報ライブラリ</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Real Estate Information Library</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -236,6 +248,10 @@
           <tr>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">登記所備付地図</td>
             <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Land Registry Map</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">空間オントロジー</td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2">Spatial Ontology</td>
           </tr>
         </tbody>
       </table>
