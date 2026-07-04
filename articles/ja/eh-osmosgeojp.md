@@ -1,6 +1,6 @@
 ---
-title: "Japan's FOSS4G Community: Brief introduction of OSGeo Japan & OpenStreetMap Japan"
-description: "Japan's FOSS4G Community: Brief introduction of OSGeo Japan & OpenStreetMap Japan"
+title: "日本のFOSS4Gコミュニティ: OSGeo JapanとOpenStreetMap Japanの紹介"
+description: "オープンソースGISを支えるOSGeo Japanと自由に編集できる地図プロジェクトOpenStreetMapの日本コミュニティの活動を紹介する"
 date: 2025-12-26
 category: "organization"
 author: "Eita.H"
@@ -25,6 +25,8 @@ OSGeo Japanは2006年[^2]、OpenStreetMap Foundation Japanは2010年[^3]に発�
 その活動は、単なる技術普及にとどまらず、地理空間情報を公共資源として活用する文化の形成にも寄与してきたと言える。
 
 ## OSGeo Japan
+![OSGeo Japan Logo](/images/articles/eita-h/logo_OSGeo.webp) [^2]
+
 OSGeo Japanは、OSGeoの正式なLocal Chapterとして、QGIS、PostGIS、MapLibreといったオープンソースGISソフトウェアの普及、教育、情報交換を目的に活動している。[^2]
 FOSS4G Japanをはじめとする各種イベントを通じて、多くの交流の場を継続的に提供してきた。
 
@@ -37,6 +39,8 @@ FOSS4G Japanをはじめとする各種イベントを通じて、多くの交�
 また、OSGeoが主催するGlobalカンファレンスであるFOSS4G Globalは、2025年までは日本での開催がなかったが、2026年は日本の広島で開催されることが決定している。[^5]
 
 ## OpenStreetMap Foundation Japan
+![OpenStreetMap Japan Logo](/images/articles/eita-h/logo_OSMJ.webp) [^3]
+
 OpenStreetMapの日本コミュニティは、2008年にマッピング活動を開始した。[^3] 
 それ以降、継続的にマッピングイベントや勉強会を重ね、国が整備する地図では把握しきれない情報をボトムアップで蓄積してきた。
 
@@ -115,10 +119,12 @@ MIERUNEは、日本の最北に位置する北海道に住むFOSS4Gコミュニ�
 人材育成の観点では、例えばOSGeo Japanではイベント開催を通じて関心をもった若手の技術者を理事などの重要ポジションに抜擢している。[^2] 
 一部の古参メンバーのみが牽引する組織は継続性に欠けることになるため、こうした組織づくりは今後の継続的な組織運営において重要となるだろう。
 
-# FOSS4G ２０２６ Hiroshimaへ
+# FOSS4G 2026 Hiroshimaへ
 このように、日本のOSGeoおよびOpenStreetMapコミュニティは、中央集権的な構造ではなく、地域ごとに主体的な運営チームが立ち上がり、相互に緩やかにつながる分散型のネットワークを形成していると言えるだろう。各地のFOSS4Gやマッピングイベントで育まれた人的ネットワークが、より大きな挑戦を支える基盤となっている。
 
 最後に、OSGeoにおける国際的な動向として、2026年に開催される重要なイベントに触れておきたい。
+
+![FOSS4G 2026 Hiroshima Logo](/images/articles/eita-h/logo_foss4gHiroshima.webp) [^5]
 
 FOSS4GはFree and Open Source Software for Geospatialの略称であり、オープンソースGISの普及を推進する非営利団体OSGeoが主催する、世界最大級の国際会議である。
 このFOSS4G Globalカンファレンスが、2026年に日本・広島で開催されることが決定している。これは、日本で初めての開催となる。[^5]

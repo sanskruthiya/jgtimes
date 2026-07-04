@@ -45,6 +45,22 @@ export async function load({ params }) {
       metadata.date = format(metadata.date, 'yyyy-MM-dd');
     }
 
+    // 日本語版の読み込み（存在する場合のみ）
+    let htmlContentJa = null;
+    let metadataJa = null;
+    const jaFilePath = path.resolve('articles/ja', `${articleId}.md`);
+    try {
+      const jaFileContent = await readFile(jaFilePath, 'utf-8');
+      const parsedMatterJa = matter(jaFileContent);
+      htmlContentJa = mdParser.render(parsedMatterJa.content);
+      metadataJa = parsedMatterJa.data;
+      if (metadataJa.date instanceof Date) {
+        metadataJa.date = format(metadataJa.date, 'yyyy-MM-dd');
+      }
+    } catch {
+      // JA版なし
+    }
+
     const articles = getArticles();
     
     // シリアライズ可能なデータに変換
@@ -55,7 +71,9 @@ export async function load({ params }) {
       })),
       params: { articleId: params.articleId },  // 必要なプロパティのみを抽出
       htmlContent,
-      metadata: metadata ? { ...metadata } : null
+      metadata: metadata ? { ...metadata } : null,
+      htmlContentJa,
+      metadataJa: metadataJa ? { ...metadataJa } : null
     };
 
     // 変換したデータを返す

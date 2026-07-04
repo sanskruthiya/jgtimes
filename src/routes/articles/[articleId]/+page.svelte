@@ -7,6 +7,11 @@
     let showHeader = $state(false);
     let showContent = $state(false);
     let showSidebar = $state(false);
+    let lang = $state('en');
+
+    const hasJapanese = data.htmlContentJa !== null && data.htmlContentJa !== undefined;
+    const currentMetadata = $derived(lang === 'ja' && data.metadataJa ? data.metadataJa : data.metadata);
+    const currentContent = $derived(lang === 'ja' && data.htmlContentJa ? data.htmlContentJa : data.htmlContent);
 
     onMount(() => {
         setTimeout(() => showHeader = true, 100);
@@ -16,8 +21,8 @@
 </script>
 
 <svelte:head>
-  <title>{data.metadata?.title || 'Article'}</title>
-  <meta name="description" content={data.metadata?.description || data.metadata?.title || 'Article'} />
+  <title>{currentMetadata?.title || 'Article'}</title>
+  <meta name="description" content={currentMetadata?.description || currentMetadata?.title || 'Article'} />
 </svelte:head>
   
 {#if showHeader}
@@ -27,39 +32,51 @@
       <img class="h-96 w-full object-cover rounded-lg" src={`/thumbnails/${data.metadata?.thumbnail}`}/>
     </div>
     -->
-    <h1 class="text-3xl font-semibold mt-8">{data.metadata?.title || 'Untitled'}</h1>
-    <div class="flex justify-center items-center w-full mt-4">
-      {#if data.metadata?.category}
-        {#if Array.isArray(data.metadata?.category)}
-          {#each data.metadata.category as category}
+    <h1 class="text-3xl font-semibold mt-8">{currentMetadata?.title || 'Untitled'}</h1>
+    <div class="flex justify-center items-center w-full mt-4 flex-wrap gap-y-2">
+      {#if currentMetadata?.category}
+        {#if Array.isArray(currentMetadata?.category)}
+          {#each currentMetadata.category as category}
             <p class="inline-flex items-center px-2 py-1 bg-blue-200 text-blue-800 rounded text-xs mr-2">
               {category}
             </p>
           {/each}
         {:else}
           <p class="inline-flex items-center px-2 py-1 bg-blue-200 text-blue-800 rounded text-xs mr-2">
-            {data.metadata.category}
+            {currentMetadata.category}
           </p>
         {/if}
       {/if}
-      {#if data.metadata?.date}
-        <p class="text-md text-gray-700 dark:text-gray-300 ml-2">{data.metadata.date}</p>
+      {#if currentMetadata?.date}
+        <p class="text-md text-gray-700 dark:text-gray-300 ml-2">{currentMetadata.date}</p>
       {/if}
-      {#if data.metadata?.author}
-        {#if Array.isArray(data.metadata.author)}
-          <p class="text-md text-gray-700 dark:text-gray-300 ml-2">by {data.metadata.author.join(', ')}</p>
+      {#if currentMetadata?.author}
+        {#if Array.isArray(currentMetadata.author)}
+          <p class="text-md text-gray-700 dark:text-gray-300 ml-2">by {currentMetadata.author.join(', ')}</p>
         {:else}
-          <p class="text-md text-gray-700 dark:text-gray-300 ml-2">by {data.metadata.author}</p>
+          <p class="text-md text-gray-700 dark:text-gray-300 ml-2">by {currentMetadata.author}</p>
         {/if}
       {/if}
     </div>
+    {#if hasJapanese}
+    <div class="flex items-center gap-1 mt-4">
+      <button
+        onclick={() => lang = 'en'}
+        class="px-3 py-1 text-sm rounded-full border transition-colors duration-200 {lang === 'en' ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200' : 'bg-transparent text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:border-gray-500'}"
+      >EN</button>
+      <button
+        onclick={() => lang = 'ja'}
+        class="px-3 py-1 text-sm rounded-full border transition-colors duration-200 {lang === 'ja' ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200' : 'bg-transparent text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:border-gray-500'}"
+      >日本語</button>
+    </div>
+    {/if}
 </div>
 {/if}
   
 <div class="grid grid-cols-1 md:grid-cols-[3fr,auto] gap-4 mx-auto max-w-[1280px]">
     {#if showContent}
         <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-        <article class="markdown-body mb:pr-4 overflow-auto" in:fade="{{ duration: 800, delay: 0 }}">{@html data.htmlContent}</article>
+        <article class="markdown-body mb:pr-4 overflow-auto" in:fade="{{ duration: 800, delay: 0 }}">{@html currentContent}</article>
     {/if}
     {#if showSidebar}
         <aside class="md:w-[360px] md:pl-4 md:pt-0 pt-4" in:fly="{{ x: 30, duration: 600, delay: 0 }}">

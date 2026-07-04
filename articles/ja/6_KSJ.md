@@ -1,7 +1,7 @@
 ---
 title: "国の基本情報をGISで無償提供：国土数値情報ダウンロードサービス"
 description: '国の基本情報をGISで無償提供：国土数値情報ダウンロードサービスについて'
-date: 2025-07-30
+date: 2025-08-10
 category: [service, government]
 author: "Eita.H"
 thumbnail: NA
