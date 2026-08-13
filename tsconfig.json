@@ -10,6 +10,7 @@
 		"sourceMap": true,
 		"strict": true,
 		"moduleResolution": "node",
+		"ignoreDeprecations": "6.0",
 		"types": ["svelte"]
 	}
 	// Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias

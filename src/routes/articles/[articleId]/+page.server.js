@@ -6,7 +6,6 @@ import footnote from 'markdown-it-footnote'; // 脚注機能を提供するプ�
 import matter from 'gray-matter';
 import { format } from 'date-fns';
 import { getArticles } from '$lib/getArticles';
-import { supabase } from '$lib/server/supabase';
 
 const readFile = promisify(fs.readFile);
 
@@ -64,14 +63,6 @@ export async function load({ params }) {
 
     const articles = getArticles();
 
-    // 承認済みコメントを取得
-    const { data: comments } = await supabase
-      .from('comments')
-      .select('id, author_name, content, created_at')
-      .eq('article_id', articleId)
-      .eq('status', 'approved')
-      .order('created_at', { ascending: true });
-
     // シリアライズ可能なデータに変換
     const responseData = {
       articles: articles.map(article => ({
@@ -82,8 +73,7 @@ export async function load({ params }) {
       htmlContent,
       metadata: metadata ? { ...metadata } : null,
       htmlContentJa,
-      metadataJa: metadataJa ? { ...metadataJa } : null,
-      comments: comments || []
+      metadataJa: metadataJa ? { ...metadataJa } : null
     };
 
     // 変換したデータを返す
@@ -96,30 +86,3 @@ export async function load({ params }) {
     };
   }
 }
-
-export const actions = {
-  postComment: async ({ request, params }) => {
-    const formData = await request.formData();
-    const raw = formData.get('author_name')?.toString().trim();
-    const author_name = raw || 'Anonymous';
-    const content = formData.get('content')?.toString().trim();
-
-    if (!content) {
-      return { success: false, message: 'Please enter a comment.' };
-    }
-    if (content.length > 1000) {
-      return { success: false, message: 'Comment must be 1000 characters or fewer.' };
-    }
-
-    const { error } = await supabase
-      .from('comments')
-      .insert({ article_id: params.articleId, author_name, content });
-
-    if (error) {
-      console.error('Comment insert error:', error);
-      return { success: false, message: 'Failed to submit. Please try again later.' };
-    }
-
-    return { success: true, message: 'Comment submitted! It will appear after review.' };
-  }
-};
