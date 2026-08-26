@@ -9,9 +9,13 @@
     let showSidebar = $state(false);
     let lang = $state('en');
 
-    const hasJapanese = $derived(data.htmlContentJa !== null && data.htmlContentJa !== undefined);
-    const currentMetadata = $derived(lang === 'ja' && data.metadataJa ? data.metadataJa : data.metadata);
-    const currentContent = $derived(lang === 'ja' && data.htmlContentJa ? data.htmlContentJa : data.htmlContent);
+    /** @type {Record<string, string>} */
+    const langLabels = { en: 'EN', ja: '日本語', es: 'Español', fr: 'Français', pt: 'Português', zh: '中文', ko: '한국어' };
+
+    const availableLanguages = $derived(['en', ...Object.keys(data.translations ?? {})]);
+    const hasTranslations = $derived(Object.keys(data.translations ?? {}).length > 0);
+    const currentMetadata = $derived(lang !== 'en' && data.translations?.[lang]?.metadata ? data.translations[lang].metadata : data.metadata);
+    const currentContent = $derived(lang !== 'en' && data.translations?.[lang]?.htmlContent ? data.translations[lang].htmlContent : data.htmlContent);
 
     onMount(() => {
         setTimeout(() => showHeader = true, 100);
@@ -58,16 +62,14 @@
         {/if}
       {/if}
     </div>
-    {#if hasJapanese}
+    {#if hasTranslations}
     <div class="flex items-center gap-1 mt-4">
+      {#each availableLanguages as language}
       <button
-        onclick={() => lang = 'en'}
-        class="px-3 py-1 text-sm rounded-full border transition-colors duration-200 {lang === 'en' ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200' : 'bg-transparent text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:border-gray-500'}"
-      >EN</button>
-      <button
-        onclick={() => lang = 'ja'}
-        class="px-3 py-1 text-sm rounded-full border transition-colors duration-200 {lang === 'ja' ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200' : 'bg-transparent text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:border-gray-500'}"
-      >日本語</button>
+        onclick={() => lang = language}
+        class="px-3 py-1 text-sm rounded-full border transition-colors duration-200 {lang === language ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200' : 'bg-transparent text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:border-gray-500'}"
+      >{langLabels[language] ?? language.toUpperCase()}</button>
+      {/each}
     </div>
     {/if}
 </div>

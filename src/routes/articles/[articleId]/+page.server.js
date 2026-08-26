@@ -45,20 +45,32 @@ export async function load({ params }) {
       metadata.date = format(metadata.date, 'yyyy-MM-dd');
     }
 
-    // 日本語版の読み込み（存在する場合のみ）
-    let htmlContentJa = null;
-    let metadataJa = null;
-    const jaFilePath = path.resolve('articles/ja', `${articleId}.md`);
-    try {
-      const jaFileContent = await readFile(jaFilePath, 'utf-8');
-      const parsedMatterJa = matter(jaFileContent);
-      htmlContentJa = mdParser.render(parsedMatterJa.content);
-      metadataJa = parsedMatterJa.data;
-      if (metadataJa.date instanceof Date) {
-        metadataJa.date = format(metadataJa.date, 'yyyy-MM-dd');
+    // 利用可能な翻訳言語を動的にスキャン（en以外のサブディレクトリを対象）
+    const articlesRoot = path.resolve('articles');
+    const langDirs = fs.readdirSync(articlesRoot).filter(dir => {
+      if (dir === 'en') return false;
+      return fs.statSync(path.join(articlesRoot, dir)).isDirectory();
+    });
+
+    /** @type {Record<string, {htmlContent: string, metadata: Record<string, unknown>}>} */
+    const translations = {};
+    for (const lang of langDirs) {
+      const langFilePath = path.join(articlesRoot, lang, `${articleId}.md`);
+      try {
+        const langFileContent = await readFile(langFilePath, 'utf-8');
+        const parsedMatterLang = matter(langFileContent);
+        const htmlContentLang = mdParser.render(parsedMatterLang.content);
+        let metadataLang = parsedMatterLang.data;
+        if (metadataLang.date instanceof Date) {
+          metadataLang.date = format(metadataLang.date, 'yyyy-MM-dd');
+        }
+        translations[lang] = {
+          htmlContent: htmlContentLang,
+          metadata: { ...metadataLang }
+        };
+      } catch {
+        // この言語の翻訳なし
       }
-    } catch {
-      // JA版なし
     }
 
     const articles = getArticles();
@@ -72,8 +84,7 @@ export async function load({ params }) {
       params: { articleId: params.articleId },  // 必要なプロパティのみを抽出
       htmlContent,
       metadata: metadata ? { ...metadata } : null,
-      htmlContentJa,
-      metadataJa: metadataJa ? { ...metadataJa } : null
+      translations
     };
 
     // 変換したデータを返す
